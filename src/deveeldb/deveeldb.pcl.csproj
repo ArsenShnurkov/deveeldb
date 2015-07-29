@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
@@ -12,9 +12,6 @@
     <AssemblyName>deveeldb.pcl</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <FileAlignment>512</FileAlignment>
-    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <TargetFrameworkProfile>Profile328</TargetFrameworkProfile>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
     <RestorePackages>true</RestorePackages>
   </PropertyGroup>
@@ -139,7 +136,6 @@
     <Compile Include="Deveel.Data.Diagnostics\IEventRegistry.cs" />
     <Compile Include="Deveel.Data.Diagnostics\IEventRouter.cs" />
     <Compile Include="Deveel.Data.Diagnostics\IEventSource.cs" />
-    <Compile Include="Deveel.Data.Diagnostics\LogEventRouter.cs" />
     <Compile Include="Deveel.Data.Diagnostics\LogLevel.cs" />
     <Compile Include="Deveel.Data.Diagnostics\NotificationEvent.cs" />
     <Compile Include="Deveel.Data.Diagnostics\NotificationLevel.cs" />
@@ -655,28 +651,31 @@
     <Compile Include="Deveel.Data\ObjectName.cs" />
     <Compile Include="Deveel.Data\ParameterDirection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Deveel.Data.Diagnostics\LogeventRouter.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Deveel.Math, Version=1.5.63.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\dmath-pcl.1.5.63\lib\portable-net40+sl50+win+wpa81+wp80\Deveel.Math.pdb\Deveel.Math.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="DryIoc, Version=2.0.0.295, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\DryIoc.dll.2.0.0-rc2build295\lib\portable-net4+sl5+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1\DryIoc.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="Irony.Shared">
       <HintPath>..\..\lib\irony.pcl\Irony.Shared.dll</HintPath>
     </Reference>
+    <Reference Include="DryIoc, Version=2.0.0.295, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\packages\DryIoc.dll.2.0.0-rc2build295\lib\portable-net4+sl5+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1\DryIoc.dll</HintPath>
+    </Reference>
+    <Reference Include="Deveel.Math">
+      <HintPath>..\packages\dmath.1.5.63\lib\net20\Deveel.Math.pdb\Deveel.Math.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+<!--
   <PropertyGroup>
     <PostBuildEvent>IF NOT EXIST "$(SolutionDir)..\dist\$(PlatformName)" MKDIR "$(SolutionDir)..\dist\$(PlatformName)"
 $(SolutionDir)..\util\ilrepack\ILRepack.exe /internalize /targetplatform:v4 /xmldocs /out:"$(SolutionDir)..\dist\$(PlatformName)\$(TargetFileName)" "$(TargetPath)" "$(TargetDir)\irony.dll" "$(TargetDir)\Deveel.Math.dll" "$(TargetDir)\DryIoc.dll"</PostBuildEvent>
   </PropertyGroup>
+-->
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
