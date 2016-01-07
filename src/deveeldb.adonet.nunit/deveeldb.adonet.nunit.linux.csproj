@@ -44,9 +44,9 @@
     <None Include="app.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\deveeldb\deveeldb.csproj">
+    <ProjectReference Include="..\deveeldb\deveeldb.linux.csproj">
       <Project>{A14222AE-1B48-4863-A0CA-1D6C2AB2190B}</Project>
-      <Name>deveeldb</Name>
+      <Name>deveeldb.linux</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>
