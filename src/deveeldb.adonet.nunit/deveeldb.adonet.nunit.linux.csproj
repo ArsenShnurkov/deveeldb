@@ -49,4 +49,7 @@
       <Name>deveeldb.linux</Name>
     </ProjectReference>
   </ItemGroup>
+  <Target Name="BeforeBuild">
+    <Delete Files="../packages/repositories.config" />
+  </Target>
 </Project>
