@@ -1,0 +1,2239 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="/var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/bin/Debug/deveeldb-nunit.dll" total="312" errors="75" failures="61" not-run="0" inconclusive="1" ignored="0" skipped="0" invalid="0" date="2016-01-06" time="09:00:19">
+  <environment nunit-version="2.6.4.0" clr-version="4.0.30319.17020" os-version="Unix 4.2.0.0" platform="Unix" cwd="/var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit" machine-name="sabayon" user="root" user-domain="sabayon" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="Assembly" name="/var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/bin/Debug/deveeldb-nunit.dll" executed="True" result="Failure" success="False" time="7.538" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="Deveel" executed="True" result="Failure" success="False" time="7.532" asserts="0">
+        <results>
+          <test-suite type="Namespace" name="Data" executed="True" result="Failure" success="False" time="7.528" asserts="0">
+            <results>
+              <test-suite type="TestFixture" name="BooleanObjectTest" executed="True" result="Success" success="True" time="0.038" asserts="0">
+                <results>
+                  <test-case name="Deveel.Data.BooleanObjectTest.Convert_False_ToNumber" executed="True" result="Success" success="True" time="0.026" asserts="6" />
+                  <test-case name="Deveel.Data.BooleanObjectTest.Convert_Null_ToNumber" executed="True" result="Success" success="True" time="0.001" asserts="7" />
+                  <test-case name="Deveel.Data.BooleanObjectTest.Convert_True_ToNumber" executed="True" result="Success" success="True" time="0.000" asserts="6" />
+                  <test-case name="Deveel.Data.BooleanObjectTest.Create_False" executed="True" result="Success" success="True" time="0.000" asserts="3" />
+                  <test-case name="Deveel.Data.BooleanObjectTest.Create_Null" executed="True" result="Success" success="True" time="0.000" asserts="4" />
+                  <test-case name="Deveel.Data.BooleanObjectTest.Create_True" executed="True" result="Success" success="True" time="0.000" asserts="3" />
+                </results>
+              </test-suite>
+              <test-suite type="Namespace" name="Caching" executed="True" result="Success" success="True" time="0.004" asserts="0">
+                <results>
+                  <test-suite type="TestFixture" name="MemoryCacheTests" executed="True" result="Success" success="True" time="0.004" asserts="0">
+                    <results>
+                      <test-case name="Deveel.Data.Caching.MemoryCacheTests.CreateWithoutErrors" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Deveel.Data.Caching.MemoryCacheTests.SetAndGetValue" executed="True" result="Success" success="True" time="0.002" asserts="5" />
+                      <test-case name="Deveel.Data.Caching.MemoryCacheTests.SetValue" executed="True" result="Success" success="True" time="0.000" asserts="2" />
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+              <test-suite type="Namespace" name="Client" executed="True" result="Failure" success="False" time="1.576" asserts="0">
+                <results>
+                  <test-suite type="TestFixture" name="DbConnectionTests" executed="True" result="Failure" success="False" time="1.576" asserts="0">
+                    <results>
+                      <test-case name="Deveel.Data.Client.DbConnectionTests.OpenForAdmin" executed="True" result="Error" success="False" time="1.403" asserts="0">
+                        <failure>
+                          <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                          <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                      <test-case name="Deveel.Data.Client.DbConnectionTests.QueryForAdmin" executed="True" result="Error" success="False" time="0.059" asserts="0">
+                        <failure>
+                          <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                          <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                      <test-case name="Deveel.Data.Client.DbConnectionTests.QueryScalarForAdmin" executed="True" result="Error" success="False" time="0.059" asserts="0">
+                        <failure>
+                          <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                          <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+              <test-suite type="Namespace" name="Configuration" executed="True" result="Success" success="True" time="0.026" asserts="0">
+                <results>
+                  <test-suite type="TestFixture" name="DbConfigTests" executed="True" result="Success" success="True" time="0.026" asserts="0">
+                    <results>
+                      <test-case name="Deveel.Data.Configuration.DbConfigTests.DefaultConfig" executed="True" result="Success" success="True" time="0.001" asserts="4" />
+                      <test-case name="Deveel.Data.Configuration.DbConfigTests.Extensions_LoadFromProperties" executed="True" result="Success" success="True" time="0.006" asserts="7" />
+                      <test-suite type="ParameterizedTest" name="GetBooleanValue" executed="True" result="Success" success="True" time="0.003" asserts="0">
+                        <results>
+                          <test-case name="Deveel.Data.Configuration.DbConfigTests.GetBooleanValue(&quot;test&quot;,&quot;true&quot;,True)" executed="True" result="Success" success="True" time="0.001" asserts="7" />
+                          <test-case name="Deveel.Data.Configuration.DbConfigTests.GetBooleanValue(&quot;test&quot;,&quot;false&quot;,False)" executed="True" result="Success" success="True" time="0.000" asserts="7" />
+                          <test-case name="Deveel.Data.Configuration.DbConfigTests.GetBooleanValue(&quot;test&quot;,&quot;off&quot;,False)" executed="True" result="Success" success="True" time="0.000" asserts="7" />
+                          <test-case name="Deveel.Data.Configuration.DbConfigTests.GetBooleanValue(&quot;test&quot;,&quot;on&quot;,True)" executed="True" result="Success" success="True" time="0.000" asserts="7" />
+                          <test-case name="Deveel.Data.Configuration.DbConfigTests.GetBooleanValue(&quot;test&quot;,&quot;enabled&quot;,True)" executed="True" result="Success" success="True" time="0.000" asserts="7" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="ParameterizedTest" name="GetEnumValue" executed="True" result="Success" success="True" time="0.003" asserts="0">
+                        <results>
+                          <test-case name="Deveel.Data.Configuration.DbConfigTests.GetEnumValue(1,One)" executed="True" result="Success" success="True" time="0.001" asserts="6" />
+                          <test-case name="Deveel.Data.Configuration.DbConfigTests.GetEnumValue(&quot;one&quot;,One)" executed="True" result="Success" success="True" time="0.000" asserts="6" />
+                          <test-case name="Deveel.Data.Configuration.DbConfigTests.GetEnumValue(&quot;TWO&quot;,Two)" executed="True" result="Success" success="True" time="0.000" asserts="6" />
+                          <test-case name="Deveel.Data.Configuration.DbConfigTests.GetEnumValue(null,Default)" executed="True" result="Success" success="True" time="0.000" asserts="6" />
+                        </results>
+                      </test-suite>
+                      <test-case name="Deveel.Data.Configuration.DbConfigTests.GetValueAsInt32" executed="True" result="Success" success="True" time="0.002" asserts="7" />
+                      <test-case name="Deveel.Data.Configuration.DbConfigTests.GetValuesFromChild" executed="True" result="Success" success="True" time="0.001" asserts="15" />
+                      <test-case name="Deveel.Data.Configuration.DbConfigTests.GetValuesFromRoot" executed="True" result="Success" success="True" time="0.001" asserts="10" />
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="DatabaseTests" executed="True" result="Failure" success="False" time="0.130" asserts="0">
+                <results>
+                  <test-case name="Deveel.Data.DatabaseTests.AuthenticateAdmin" executed="True" result="Error" success="False" time="0.059" asserts="0">
+                    <failure>
+                      <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                      <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                    </failure>
+                  </test-case>
+                  <test-case name="Deveel.Data.DatabaseTests.CreateNew" executed="True" result="Error" success="False" time="0.064" asserts="0">
+                    <failure>
+                      <message><![CDATA[Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                      <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                    </failure>
+                  </test-case>
+                  <test-case name="Deveel.Data.DatabaseTests.DatabaseNotExists" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                </results>
+              </test-suite>
+              <test-suite type="Namespace" name="Diagnostics" executed="True" result="Failure" success="False" time="0.445" asserts="0">
+                <results>
+                  <test-suite type="TestFixture" name="EventsTests" executed="True" result="Failure" success="False" time="0.441" asserts="0">
+                    <results>
+                      <test-case name="Deveel.Data.Diagnostics.EventsTests.AttachRouter" executed="True" result="Error" success="False" time="0.058" asserts="0">
+                        <failure>
+                          <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                          <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                      <test-case name="Deveel.Data.Diagnostics.EventsTests.FireAtLowerLevelAndListenAtHighest" executed="True" result="Error" success="False" time="0.059" asserts="0">
+                        <failure>
+                          <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                          <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                      <test-case name="Deveel.Data.Diagnostics.EventsTests.RouteError" executed="True" result="Error" success="False" time="0.064" asserts="0">
+                        <failure>
+                          <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                          <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                      <test-case name="Deveel.Data.Diagnostics.EventsTests.RouteOneRegisteredMany" executed="True" result="Error" success="False" time="0.060" asserts="0">
+                        <failure>
+                          <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                          <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                      <test-case name="Deveel.Data.Diagnostics.EventsTests.RouteOnlyOnce" executed="True" result="Error" success="False" time="0.060" asserts="0">
+                        <failure>
+                          <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                          <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                      <test-case name="Deveel.Data.Diagnostics.EventsTests.RouteOnlyOnceForSameEventType" executed="True" result="Error" success="False" time="0.059" asserts="0">
+                        <failure>
+                          <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                          <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                      <test-case name="Deveel.Data.Diagnostics.EventsTests.RouteTwiceForSameEventType" executed="True" result="Error" success="False" time="0.061" asserts="0">
+                        <failure>
+                          <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                          <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="LoggerTests" executed="True" result="Inconclusive" success="False" time="0.000" asserts="0" />
+                </results>
+              </test-suite>
+              <test-suite type="Namespace" name="Index" executed="True" result="Success" success="True" time="0.010" asserts="0">
+                <results>
+                  <test-suite type="TestFixture" name="BlindSearchTests" executed="True" result="Success" success="True" time="0.009" asserts="0">
+                    <results>
+                      <test-case name="Deveel.Data.Index.BlindSearchTests.SelectEqualOneColumn" executed="True" result="Success" success="True" time="0.008" asserts="3" />
+                      <test-case name="Deveel.Data.Index.BlindSearchTests.SelectEqualTwoColumns" executed="True" result="Success" success="True" time="0.000" asserts="3" />
+                      <test-case name="Deveel.Data.Index.BlindSearchTests.SelectGreater" executed="True" result="Success" success="True" time="0.000" asserts="4" />
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="NullObjectTest" executed="True" result="Success" success="True" time="0.001" asserts="0">
+                <results>
+                  <test-case name="Deveel.Data.NullObjectTest.NullObjectEqualsDbNull" executed="True" result="Success" success="True" time="0.000" asserts="2" />
+                  <test-case name="Deveel.Data.NullObjectTest.NullObjectEqualsNull" executed="True" result="Success" success="True" time="0.000" asserts="5" />
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="NumericObjectTests" executed="True" result="Success" success="True" time="0.014" asserts="0">
+                <categories>
+                  <category name="Data Objects" />
+                  <category name="Numbers" />
+                </categories>
+                <results>
+                  <test-case name="Deveel.Data.NumericObjectTests.BigInt_Create" executed="True" result="Success" success="True" time="0.001" asserts="4" />
+                  <test-case name="Deveel.Data.NumericObjectTests.Integer_Compare_Equal" executed="True" result="Success" success="True" time="0.000" asserts="8" />
+                  <test-case name="Deveel.Data.NumericObjectTests.Integer_Compare_NotEqual" executed="True" result="Success" success="True" time="0.000" asserts="8" />
+                  <test-case name="Deveel.Data.NumericObjectTests.Integer_Convert_ToBoolean" executed="True" result="Success" success="True" time="0.001" asserts="8" />
+                  <test-case name="Deveel.Data.NumericObjectTests.Integer_Convert_ToDouble" executed="True" result="Success" success="True" time="0.002" asserts="8" />
+                  <test-case name="Deveel.Data.NumericObjectTests.Integer_Convert_ToVarChar" executed="True" result="Success" success="True" time="0.002" asserts="8" />
+                  <test-case name="Deveel.Data.NumericObjectTests.Integer_Create" executed="True" result="Success" success="True" time="0.000" asserts="4" />
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="ObjectNameTest" executed="True" result="Success" success="True" time="0.006" asserts="0">
+                <categories>
+                  <category name="Object Name" />
+                </categories>
+                <results>
+                  <test-case name="Deveel.Data.ObjectNameTest.ComplexName" executed="True" result="Success" success="True" time="0.000" asserts="7" />
+                  <test-case name="Deveel.Data.ObjectNameTest.ComplexName_Parse" executed="True" result="Success" success="True" time="0.000" asserts="8" />
+                  <test-case name="Deveel.Data.ObjectNameTest.ComplexNameWithGlob" executed="True" result="Success" success="True" time="0.000" asserts="7" />
+                  <test-case name="Deveel.Data.ObjectNameTest.SimpleName" executed="True" result="Success" success="True" time="0.000" asserts="5" />
+                  <test-case name="Deveel.Data.ObjectNameTest.SimpleName_Compare" executed="True" result="Success" success="True" time="0.000" asserts="2" />
+                  <test-case name="Deveel.Data.ObjectNameTest.SimpleName_Equals" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                  <test-case name="Deveel.Data.ObjectNameTest.SimpleName_NotEquals" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                  <test-case name="Deveel.Data.ObjectNameTest.SimpleName_Parse" executed="True" result="Success" success="True" time="0.000" asserts="5" />
+                </results>
+              </test-suite>
+              <test-suite type="Namespace" name="Routines" executed="True" result="Failure" success="False" time="0.504" asserts="0">
+                <results>
+                  <test-suite type="TestFixture" name="FunctionBuildTests" executed="True" result="Failure" success="False" time="0.122" asserts="0">
+                    <results>
+                      <test-case name="Deveel.Data.Routines.FunctionBuildTests.ScalarWithNoArguments" executed="True" result="Error" success="False" time="0.059" asserts="0">
+                        <failure>
+                          <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                          <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                      <test-case name="Deveel.Data.Routines.FunctionBuildTests.ScalarWithTwoArgument" executed="True" result="Error" success="False" time="0.060" asserts="0">
+                        <failure>
+                          <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                          <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="SystemFunctionTests" executed="True" result="Failure" success="False" time="0.379" asserts="0">
+                    <results>
+                      <test-case name="Deveel.Data.Routines.SystemFunctionTests.InvokeDateToString" executed="True" result="Error" success="False" time="0.060" asserts="0">
+                        <failure>
+                          <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                          <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                      <test-case name="Deveel.Data.Routines.SystemFunctionTests.InvokeIntegerToString" executed="True" result="Error" success="False" time="0.059" asserts="0">
+                        <failure>
+                          <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                          <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                      <test-case name="Deveel.Data.Routines.SystemFunctionTests.InvokeTimeStampToString_NoFormat" executed="True" result="Error" success="False" time="0.061" asserts="0">
+                        <failure>
+                          <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                          <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                      <test-case name="Deveel.Data.Routines.SystemFunctionTests.InvokeUserFunction" executed="True" result="Error" success="False" time="0.060" asserts="0">
+                        <failure>
+                          <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                          <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                      <test-case name="Deveel.Data.Routines.SystemFunctionTests.ResolveSystemFunctionFullyQualified" executed="True" result="Error" success="False" time="0.064" asserts="0">
+                        <failure>
+                          <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                          <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                      <test-case name="Deveel.Data.Routines.SystemFunctionTests.ResolveSystemFunctionWithNoSchema" executed="True" result="Error" success="False" time="0.060" asserts="0">
+                        <failure>
+                          <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                          <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+              <test-suite type="Namespace" name="Security" executed="True" result="Failure" success="False" time="0.508" asserts="0">
+                <results>
+                  <test-suite type="TestFixture" name="UserManagementTests" executed="True" result="Failure" success="False" time="0.508" asserts="0">
+                    <results>
+                      <test-case name="Deveel.Data.Security.UserManagementTests.AdminChangesUserPassword" executed="True" result="Error" success="False" time="0.062" asserts="0">
+                        <failure>
+                          <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                          <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                      <test-case name="Deveel.Data.Security.UserManagementTests.Authenticate_Fail" executed="True" result="Error" success="False" time="0.062" asserts="0">
+                        <failure>
+                          <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                          <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                      <test-case name="Deveel.Data.Security.UserManagementTests.Authenticate_Success" executed="True" result="Error" success="False" time="0.061" asserts="0">
+                        <failure>
+                          <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                          <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                      <test-case name="Deveel.Data.Security.UserManagementTests.CreateExistingUser" executed="True" result="Error" success="False" time="0.060" asserts="0">
+                        <failure>
+                          <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                          <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                      <test-case name="Deveel.Data.Security.UserManagementTests.CreateUser" executed="True" result="Error" success="False" time="0.060" asserts="0">
+                        <failure>
+                          <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                          <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                      <test-case name="Deveel.Data.Security.UserManagementTests.DropUser" executed="True" result="Error" success="False" time="0.061" asserts="0">
+                        <failure>
+                          <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                          <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                      <test-case name="Deveel.Data.Security.UserManagementTests.LockUser" executed="True" result="Error" success="False" time="0.061" asserts="0">
+                        <failure>
+                          <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                          <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                      <test-case name="Deveel.Data.Security.UserManagementTests.SetUserGroups" executed="True" result="Error" success="False" time="0.061" asserts="0">
+                        <failure>
+                          <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                          <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="SequenceManagerTests" executed="True" result="Failure" success="False" time="0.192" asserts="0">
+                <results>
+                  <test-case name="Deveel.Data.SequenceManagerTests.CreateNativeSequence" executed="True" result="Error" success="False" time="0.061" asserts="0">
+                    <failure>
+                      <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                      <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                    </failure>
+                  </test-case>
+                  <test-case name="Deveel.Data.SequenceManagerTests.CreateNormalSequence" executed="True" result="Error" success="False" time="0.063" asserts="0">
+                    <failure>
+                      <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                      <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                    </failure>
+                  </test-case>
+                  <test-case name="Deveel.Data.SequenceManagerTests.IncremementSequenceValue" executed="True" result="Error" success="False" time="0.062" asserts="0">
+                    <failure>
+                      <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                      <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                    </failure>
+                  </test-case>
+                </results>
+              </test-suite>
+              <test-suite type="Namespace" name="Serialization" executed="True" result="Success" success="True" time="0.017" asserts="0">
+                <results>
+                  <test-suite type="TestFixture" name="BinarySerializeTests" executed="True" result="Success" success="True" time="0.017" asserts="0">
+                    <results>
+                      <test-case name="Deveel.Data.Serialization.BinarySerializeTests.SerializeImplicit" executed="True" result="Success" success="True" time="0.013" asserts="4" />
+                      <test-case name="Deveel.Data.Serialization.BinarySerializeTests.SerializeObjectNameWithNoParent" executed="True" result="Success" success="True" time="0.002" asserts="4" />
+                      <test-case name="Deveel.Data.Serialization.BinarySerializeTests.SerializeWithNoParent" executed="True" result="Success" success="True" time="0.001" asserts="4" />
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+              <test-suite type="Namespace" name="Services" executed="True" result="Success" success="True" time="0.006" asserts="0">
+                <results>
+                  <test-suite type="TestFixture" name="ServiceContainerTests" executed="True" result="Success" success="True" time="0.005" asserts="0">
+                    <results>
+                      <test-case name="Deveel.Data.Services.ServiceContainerTests.RegisterAndResolveFromChild" executed="True" result="Success" success="True" time="0.001" asserts="5" />
+                      <test-case name="Deveel.Data.Services.ServiceContainerTests.RegisterInstanceAndResolveAllFromChild" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Deveel.Data.Services.ServiceContainerTests.RegisterInstanceAndResolveFromChild" executed="True" result="Success" success="True" time="0.001" asserts="3" />
+                      <test-case name="Deveel.Data.Services.ServiceContainerTests.ResolveFromChildWithParentService" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+              <test-suite type="Namespace" name="Sql" executed="True" result="Failure" success="False" time="3.659" asserts="0">
+                <results>
+                  <test-suite type="Namespace" name="Compile" executed="True" result="Failure" success="False" time="0.256" asserts="0">
+                    <results>
+                      <test-suite type="TestFixture" name="AlterTableCompileTests" executed="True" result="Failure" success="False" time="0.041" asserts="0">
+                        <results>
+                          <test-case name="Deveel.Data.Sql.Compile.AlterTableCompileTests.AddColumn" executed="True" result="Failure" success="False" time="0.022" asserts="2">
+                            <failure>
+                              <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Sql.Compile.AlterTableCompileTests.AddColumn () [0x00014] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Sql.Compile/AlterTableCompileTests.cs:18
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Compile.AlterTableCompileTests.AddColumnsAndUniqeContraints" executed="True" result="Failure" success="False" time="0.001" asserts="2">
+                            <failure>
+                              <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Sql.Compile.AlterTableCompileTests.AddColumnsAndUniqeContraints () [0x00014] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Sql.Compile/AlterTableCompileTests.cs:56
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Compile.AlterTableCompileTests.AddMultipleColumns" executed="True" result="Failure" success="False" time="0.001" asserts="2">
+                            <failure>
+                              <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Sql.Compile.AlterTableCompileTests.AddMultipleColumns () [0x00014] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Sql.Compile/AlterTableCompileTests.cs:45
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Compile.AlterTableCompileTests.AddPrimaryKeyContraint" executed="True" result="Failure" success="False" time="0.001" asserts="2">
+                            <failure>
+                              <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Sql.Compile.AlterTableCompileTests.AddPrimaryKeyContraint () [0x00014] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Sql.Compile/AlterTableCompileTests.cs:82
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Compile.AlterTableCompileTests.DropColumn" executed="True" result="Failure" success="False" time="0.001" asserts="2">
+                            <failure>
+                              <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Sql.Compile.AlterTableCompileTests.DropColumn () [0x00014] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Sql.Compile/AlterTableCompileTests.cs:103
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="AssignVariableTests" executed="True" result="Failure" success="False" time="0.008" asserts="0">
+                        <results>
+                          <test-case name="Deveel.Data.Sql.Compile.AssignVariableTests.MarkedVariableToConstant" executed="True" result="Failure" success="False" time="0.003" asserts="2">
+                            <failure>
+                              <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Sql.Compile.AssignVariableTests.MarkedVariableToConstant () [0x00014] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Sql.Compile/AssignVariableTests.cs:19
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Compile.AssignVariableTests.UnmarkedVariableToConstant" executed="True" result="Failure" success="False" time="0.001" asserts="2">
+                            <failure>
+                              <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Sql.Compile.AssignVariableTests.UnmarkedVariableToConstant () [0x00014] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Sql.Compile/AssignVariableTests.cs:42
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="CloseTests" executed="True" result="Failure" success="False" time="0.001" asserts="0">
+                        <results>
+                          <test-case name="Deveel.Data.Sql.Compile.CloseTests.CloseCursor" executed="True" result="Failure" success="False" time="0.001" asserts="2">
+                            <failure>
+                              <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Sql.Compile.CloseTests.CloseCursor () [0x00014] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Sql.Compile/CloseTests.cs:18
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="CreateTableTests" executed="True" result="Failure" success="False" time="0.024" asserts="0">
+                        <results>
+                          <test-case name="Deveel.Data.Sql.Compile.CreateTableTests.SimpleTable" executed="True" result="Failure" success="False" time="0.001" asserts="2">
+                            <failure>
+                              <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Sql.Compile.CreateTableTests.SimpleTable () [0x00014] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Sql.Compile/CreateTableTests.cs:20
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Compile.CreateTableTests.WithColumnConstraints" executed="True" result="Failure" success="False" time="0.001" asserts="2">
+                            <failure>
+                              <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Sql.Compile.CreateTableTests.WithColumnConstraints () [0x00014] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Sql.Compile/CreateTableTests.cs:160
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Compile.CreateTableTests.WithColumnDefault" executed="True" result="Failure" success="False" time="0.001" asserts="2">
+                            <failure>
+                              <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Sql.Compile.CreateTableTests.WithColumnDefault () [0x00014] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Sql.Compile/CreateTableTests.cs:76
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Compile.CreateTableTests.WithColumnDefault_Advanced" executed="True" result="Failure" success="False" time="0.002" asserts="2">
+                            <failure>
+                              <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Sql.Compile.CreateTableTests.WithColumnDefault_Advanced () [0x00014] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Sql.Compile/CreateTableTests.cs:102
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Compile.CreateTableTests.WithConstraints" executed="True" result="Failure" success="False" time="0.001" asserts="2">
+                            <failure>
+                              <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Sql.Compile.CreateTableTests.WithConstraints () [0x00014] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Sql.Compile/CreateTableTests.cs:137
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Compile.CreateTableTests.WithIdentityColumn" executed="True" result="Failure" success="False" time="0.001" asserts="2">
+                            <failure>
+                              <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Sql.Compile.CreateTableTests.WithIdentityColumn () [0x00014] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Sql.Compile/CreateTableTests.cs:49
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="CreateUserTests" executed="True" result="Failure" success="False" time="0.001" asserts="0">
+                        <results>
+                          <test-case name="Deveel.Data.Sql.Compile.CreateUserTests.IdentifiedByPassword" executed="True" result="Failure" success="False" time="0.001" asserts="2">
+                            <failure>
+                              <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Sql.Compile.CreateUserTests.IdentifiedByPassword () [0x00014] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Sql.Compile/CreateUserTests.cs:19
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="CreateViewTests" executed="True" result="Failure" success="False" time="0.009" asserts="0">
+                        <results>
+                          <test-case name="Deveel.Data.Sql.Compile.CreateViewTests.OrReplace" executed="True" result="Failure" success="False" time="0.001" asserts="2">
+                            <failure>
+                              <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Sql.Compile.CreateViewTests.OrReplace () [0x00014] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Sql.Compile/CreateViewTests.cs:57
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Compile.CreateViewTests.WithColumns" executed="True" result="Failure" success="False" time="0.001" asserts="2">
+                            <failure>
+                              <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Sql.Compile.CreateViewTests.WithColumns () [0x00014] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Sql.Compile/CreateViewTests.cs:17
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Compile.CreateViewTests.WithoutColumns" executed="True" result="Failure" success="False" time="0.001" asserts="2">
+                            <failure>
+                              <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Sql.Compile.CreateViewTests.WithoutColumns () [0x00014] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Sql.Compile/CreateViewTests.cs:37
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="DeclareCursorTests" executed="True" result="Failure" success="False" time="0.011" asserts="0">
+                        <results>
+                          <test-case name="Deveel.Data.Sql.Compile.DeclareCursorTests.DeclareCursorWithArguments" executed="True" result="Failure" success="False" time="0.001" asserts="2">
+                            <failure>
+                              <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Sql.Compile.DeclareCursorTests.DeclareCursorWithArguments () [0x00014] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Sql.Compile/DeclareCursorTests.cs:17
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Compile.DeclareCursorTests.DeclareCursorWithoutArguments" executed="True" result="Failure" success="False" time="0.001" asserts="2">
+                            <failure>
+                              <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Sql.Compile.DeclareCursorTests.DeclareCursorWithoutArguments () [0x00014] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Sql.Compile/DeclareCursorTests.cs:65
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Compile.DeclareCursorTests.ImplicitDeclareCursor" executed="True" result="Failure" success="False" time="0.001" asserts="2">
+                            <failure>
+                              <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Sql.Compile.DeclareCursorTests.ImplicitDeclareCursor () [0x00014] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Sql.Compile/DeclareCursorTests.cs:41
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="DeclareVariableTests" executed="True" result="Failure" success="False" time="0.010" asserts="0">
+                        <results>
+                          <test-case name="Deveel.Data.Sql.Compile.DeclareVariableTests.DeclareConstantVariable" executed="True" result="Failure" success="False" time="0.001" asserts="2">
+                            <failure>
+                              <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Sql.Compile.DeclareVariableTests.DeclareConstantVariable () [0x00014] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Sql.Compile/DeclareVariableTests.cs:36
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Compile.DeclareVariableTests.DeclareSimpleVariable" executed="True" result="Failure" success="False" time="0.001" asserts="2">
+                            <failure>
+                              <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Sql.Compile.DeclareVariableTests.DeclareSimpleVariable () [0x00014] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Sql.Compile/DeclareVariableTests.cs:18
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Compile.DeclareVariableTests.ImplicitDeclaration" executed="True" result="Failure" success="False" time="0.001" asserts="2">
+                            <failure>
+                              <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Sql.Compile.DeclareVariableTests.ImplicitDeclaration () [0x00014] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Sql.Compile/DeclareVariableTests.cs:54
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="DeleteTests" executed="True" result="Failure" success="False" time="0.005" asserts="0">
+                        <results>
+                          <test-case name="Deveel.Data.Sql.Compile.DeleteTests.CurrentFromCursor" executed="True" result="Failure" success="False" time="0.001" asserts="2">
+                            <failure>
+                              <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Sql.Compile.DeleteTests.CurrentFromCursor () [0x00014] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Sql.Compile/DeleteTests.cs:42
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Compile.DeleteTests.FromTable" executed="True" result="Failure" success="False" time="0.001" asserts="2">
+                            <failure>
+                              <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Sql.Compile.DeleteTests.FromTable () [0x00014] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Sql.Compile/DeleteTests.cs:18
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="DropTriggerTests" executed="True" result="Failure" success="False" time="0.006" asserts="0">
+                        <results>
+                          <test-case name="Deveel.Data.Sql.Compile.DropTriggerTests.DropCallbackTrigger" executed="True" result="Failure" success="False" time="0.001" asserts="2">
+                            <failure>
+                              <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Sql.Compile.DropTriggerTests.DropCallbackTrigger () [0x00014] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Sql.Compile/DropTriggerTests.cs:40
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Compile.DropTriggerTests.DropProcedureTrigger" executed="True" result="Failure" success="False" time="0.001" asserts="2">
+                            <failure>
+                              <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Sql.Compile.DropTriggerTests.DropProcedureTrigger () [0x00014] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Sql.Compile/DropTriggerTests.cs:18
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="DropTypeTests" executed="True" result="Failure" success="False" time="0.001" asserts="0">
+                        <results>
+                          <test-case name="Deveel.Data.Sql.Compile.DropTypeTests.DropType" executed="True" result="Failure" success="False" time="0.001" asserts="2">
+                            <failure>
+                              <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Sql.Compile.DropTypeTests.DropType () [0x00014] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Sql.Compile/DropTypeTests.cs:18
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="DropUserTests" executed="True" result="Failure" success="False" time="0.005" asserts="0">
+                        <results>
+                          <test-case name="Deveel.Data.Sql.Compile.DropUserTests.DropMultipleUsers" executed="True" result="Failure" success="False" time="0.001" asserts="2">
+                            <failure>
+                              <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Sql.Compile.DropUserTests.DropMultipleUsers () [0x00014] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Sql.Compile/DropUserTests.cs:39
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Compile.DropUserTests.DropSingleUser" executed="True" result="Failure" success="False" time="0.001" asserts="2">
+                            <failure>
+                              <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Sql.Compile.DropUserTests.DropSingleUser () [0x00014] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Sql.Compile/DropUserTests.cs:18
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="FetchTests" executed="True" result="Failure" success="False" time="0.005" asserts="0">
+                        <results>
+                          <test-case name="Deveel.Data.Sql.Compile.FetchTests.FetchNextFromCursorInto" executed="True" result="Failure" success="False" time="0.001" asserts="2">
+                            <failure>
+                              <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Sql.Compile.FetchTests.FetchNextFromCursorInto () [0x00014] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Sql.Compile/FetchTests.cs:18
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Compile.FetchTests.FetchNextImplicitCursor" executed="True" result="Failure" success="False" time="0.001" asserts="2">
+                            <failure>
+                              <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Sql.Compile.FetchTests.FetchNextImplicitCursor () [0x00014] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Sql.Compile/FetchTests.cs:39
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="GrantTests" executed="True" result="Failure" success="False" time="0.011" asserts="0">
+                        <results>
+                          <test-case name="Deveel.Data.Sql.Compile.GrantTests.ParseGrantRolesToOneUser" executed="True" result="Failure" success="False" time="0.007" asserts="2">
+                            <failure>
+                              <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Sql.Compile.GrantTests.ParseGrantRolesToOneUser () [0x00014] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Sql.Compile/GrantTests.cs:45
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Compile.GrantTests.ParseGrantToOneUserToOneTable" executed="True" result="Failure" success="False" time="0.001" asserts="2">
+                            <failure>
+                              <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Sql.Compile.GrantTests.ParseGrantToOneUserToOneTable () [0x00014] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Sql.Compile/GrantTests.cs:19
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="InsertIntoTests" executed="True" result="Failure" success="False" time="0.021" asserts="0">
+                        <results>
+                          <test-case name="Deveel.Data.Sql.Compile.InsertIntoTests.InsertSelect" executed="True" result="Failure" success="False" time="0.001" asserts="2">
+                            <failure>
+                              <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Sql.Compile.InsertIntoTests.InsertSelect () [0x00014] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Sql.Compile/InsertIntoTests.cs:83
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Compile.InsertIntoTests.SchemaCompileTests.CreateSchema" executed="True" result="Failure" success="False" time="0.001" asserts="2">
+                            <failure>
+                              <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Sql.Compile.SchemaCompileTests.CreateSchema () [0x00014] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Sql.Compile/SchemaCompileTests.cs:18
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Compile.InsertIntoTests.SchemaCompileTests.DropSchema" executed="True" result="Failure" success="False" time="0.001" asserts="2">
+                            <failure>
+                              <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Sql.Compile.SchemaCompileTests.DropSchema () [0x00014] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Sql.Compile/SchemaCompileTests.cs:39
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Compile.InsertIntoTests.SetInsert" executed="True" result="Failure" success="False" time="0.001" asserts="2">
+                            <failure>
+                              <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Sql.Compile.InsertIntoTests.SetInsert () [0x00014] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Sql.Compile/InsertIntoTests.cs:63
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Compile.InsertIntoTests.ValueInsert_MultipleRows" executed="True" result="Failure" success="False" time="0.001" asserts="2">
+                            <failure>
+                              <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Sql.Compile.InsertIntoTests.ValueInsert_MultipleRows () [0x00014] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Sql.Compile/InsertIntoTests.cs:42
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Compile.InsertIntoTests.ValuesInsert_OneRow" executed="True" result="Failure" success="False" time="0.001" asserts="2">
+                            <failure>
+                              <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Sql.Compile.InsertIntoTests.ValuesInsert_OneRow () [0x00014] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Sql.Compile/InsertIntoTests.cs:20
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="OpenTests" executed="True" result="Failure" success="False" time="0.005" asserts="0">
+                        <results>
+                          <test-case name="Deveel.Data.Sql.Compile.OpenTests.OpenCursorSimple" executed="True" result="Failure" success="False" time="0.001" asserts="2">
+                            <failure>
+                              <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Sql.Compile.OpenTests.OpenCursorSimple () [0x00014] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Sql.Compile/OpenTests.cs:40
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Compile.OpenTests.OpenCursorWithArguments" executed="True" result="Failure" success="False" time="0.001" asserts="2">
+                            <failure>
+                              <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Sql.Compile.OpenTests.OpenCursorWithArguments () [0x00014] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Sql.Compile/OpenTests.cs:18
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="SchemaCompileTests" executed="True" result="Failure" success="False" time="0.004" asserts="0">
+                        <results>
+                          <test-case name="Deveel.Data.Sql.Compile.SchemaCompileTests.CreateSchema" executed="True" result="Failure" success="False" time="0.001" asserts="2">
+                            <failure>
+                              <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Sql.Compile.SchemaCompileTests.CreateSchema () [0x00014] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Sql.Compile/SchemaCompileTests.cs:18
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Compile.SchemaCompileTests.DropSchema" executed="True" result="Failure" success="False" time="0.001" asserts="2">
+                            <failure>
+                              <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Sql.Compile.SchemaCompileTests.DropSchema () [0x00014] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Sql.Compile/SchemaCompileTests.cs:39
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="SqlCompileTestBase" executed="True" result="Inconclusive" success="False" time="0.000" asserts="0" />
+                      <test-suite type="TestFixture" name="TransactionEndTests" executed="True" result="Failure" success="False" time="0.005" asserts="0">
+                        <results>
+                          <test-case name="Deveel.Data.Sql.Compile.TransactionEndTests.Commit" executed="True" result="Failure" success="False" time="0.001" asserts="2">
+                            <failure>
+                              <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Sql.Compile.TransactionEndTests.Commit () [0x00014] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Sql.Compile/TransactionEndTests.cs:18
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Compile.TransactionEndTests.Rollback" executed="True" result="Failure" success="False" time="0.001" asserts="2">
+                            <failure>
+                              <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Sql.Compile.TransactionEndTests.Rollback () [0x00014] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Sql.Compile/TransactionEndTests.cs:34
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="UpdateTests" executed="True" result="Failure" success="False" time="0.005" asserts="0">
+                        <results>
+                          <test-case name="Deveel.Data.Sql.Compile.UpdateTests.SimpleUpdate" executed="True" result="Failure" success="False" time="0.001" asserts="2">
+                            <failure>
+                              <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Sql.Compile.UpdateTests.SimpleUpdate () [0x00014] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Sql.Compile/UpdateTests.cs:18
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Compile.UpdateTests.SimpleUpdateWithLimit" executed="True" result="Failure" success="False" time="0.001" asserts="2">
+                            <failure>
+                              <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Sql.Compile.UpdateTests.SimpleUpdateWithLimit () [0x00014] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Sql.Compile/UpdateTests.cs:42
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="CreateTableTests" executed="True" result="Failure" success="False" time="0.128" asserts="0">
+                    <results>
+                      <test-case name="Deveel.Data.Sql.CreateTableTests.CreateSimple_RegularUser" executed="True" result="Error" success="False" time="0.062" asserts="0">
+                        <failure>
+                          <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                          <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                      <test-case name="Deveel.Data.Sql.CreateTableTests.CreateSimpleTableAsAdmin_NewSession" executed="True" result="Error" success="False" time="0.063" asserts="0">
+                        <failure>
+                          <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                          <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="CursorTests" executed="True" result="Failure" success="False" time="0.063" asserts="0">
+                    <results>
+                      <test-case name="Deveel.Data.Sql.CursorTests.DeclareInsensitiveCursor" executed="True" result="Error" success="False" time="0.063" asserts="0">
+                        <failure>
+                          <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                          <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="DropTableTests" executed="True" result="Failure" success="False" time="0.194" asserts="0">
+                    <results>
+                      <test-case name="Deveel.Data.Sql.DropTableTests.DropAllTables" executed="True" result="Error" success="False" time="0.063" asserts="0">
+                        <failure>
+                          <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                          <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                      <test-case name="Deveel.Data.Sql.DropTableTests.DropNonReferencedTable" executed="True" result="Error" success="False" time="0.062" asserts="0">
+                        <failure>
+                          <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                          <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                      <test-case name="Deveel.Data.Sql.DropTableTests.DropReferencedTable" executed="True" result="Error" success="False" time="0.063" asserts="0">
+                        <failure>
+                          <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                          <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                    </results>
+                  </test-suite>
+                  <test-suite type="Namespace" name="Expressions" executed="True" result="Failure" success="False" time="0.781" asserts="0">
+                    <results>
+                      <test-suite type="TestFixture" name="SqlBetweenEspressionTests" executed="True" result="Failure" success="False" time="0.008" asserts="0">
+                        <results>
+                          <test-case name="Deveel.Data.Sql.Expressions.SqlBetweenEspressionTests.BetweenDates" executed="True" result="Failure" success="False" time="0.002" asserts="1">
+                            <failure>
+                              <message><![CDATA[  Expected: No Exception to be thrown
+  But was:   (Could not parse input expression: see inner exception for details.)
+  at Deveel.Data.Sql.Expressions.SqlExpression.Parse (System.String s, ISystemContext context) <0x40b28070 + 0x00203> in <filename unknown>:0 
+  at Deveel.Data.Sql.Expressions.SqlExpression.Parse (System.String s) <0x40b28040 + 0x0000f> in <filename unknown>:0 
+  at Deveel.Data.Sql.Expressions.SqlBetweenEspressionTests+<BetweenDates>c__AnonStorey1.<>m__0 () [0x00000] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Sql.Expressions/SqlBetweenEspressionTests.cs:52 
+  at NUnit.Framework.Constraints.VoidInvocationDescriptor.Invoke () <0x4168b3f0 + 0x00019> in <filename unknown>:0 
+  at NUnit.Framework.Constraints.ExceptionInterceptor.Intercept (System.Object invocation) <0x4168ac70 + 0x00148> in <filename unknown>:0 
+]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Sql.Expressions.SqlBetweenEspressionTests.BetweenDates () [0x0000e] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Sql.Expressions/SqlBetweenEspressionTests.cs:52
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Expressions.SqlBetweenEspressionTests.BetweenNumerics" executed="True" result="Failure" success="False" time="0.001" asserts="1">
+                            <failure>
+                              <message><![CDATA[  Expected: No Exception to be thrown
+  But was:   (Could not parse input expression: see inner exception for details.)
+  at Deveel.Data.Sql.Expressions.SqlExpression.Parse (System.String s, ISystemContext context) <0x40b28070 + 0x00203> in <filename unknown>:0 
+  at Deveel.Data.Sql.Expressions.SqlExpression.Parse (System.String s) <0x40b28040 + 0x0000f> in <filename unknown>:0 
+  at Deveel.Data.Sql.Expressions.SqlBetweenEspressionTests+<BetweenNumerics>c__AnonStorey0.<>m__0 () [0x00000] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Sql.Expressions/SqlBetweenEspressionTests.cs:30 
+  at NUnit.Framework.Constraints.VoidInvocationDescriptor.Invoke () <0x4168b3f0 + 0x00019> in <filename unknown>:0 
+  at NUnit.Framework.Constraints.ExceptionInterceptor.Intercept (System.Object invocation) <0x4168ac70 + 0x00148> in <filename unknown>:0 
+]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Sql.Expressions.SqlBetweenEspressionTests.BetweenNumerics () [0x0000e] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Sql.Expressions/SqlBetweenEspressionTests.cs:30
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="SqlBinaryExpressionTests" executed="True" result="Success" success="True" time="0.075" asserts="0">
+                        <results>
+                          <test-suite type="ParameterizedTest" name="BooleanAnd" executed="True" result="Success" success="True" time="0.007" asserts="0">
+                            <results>
+                              <test-case name="Deveel.Data.Sql.Expressions.SqlBinaryExpressionTests.BooleanAnd(True,True,True)" executed="True" result="Success" success="True" time="0.006" asserts="7" />
+                              <test-case name="Deveel.Data.Sql.Expressions.SqlBinaryExpressionTests.BooleanAnd(True,False,False)" executed="True" result="Success" success="True" time="0.000" asserts="7" />
+                              <test-case name="Deveel.Data.Sql.Expressions.SqlBinaryExpressionTests.BooleanAnd(False,False,False)" executed="True" result="Success" success="True" time="0.000" asserts="7" />
+                            </results>
+                          </test-suite>
+                          <test-suite type="ParameterizedTest" name="BooleanOr" executed="True" result="Success" success="True" time="0.003" asserts="0">
+                            <results>
+                              <test-case name="Deveel.Data.Sql.Expressions.SqlBinaryExpressionTests.BooleanOr(True,True,True)" executed="True" result="Success" success="True" time="0.001" asserts="7" />
+                              <test-case name="Deveel.Data.Sql.Expressions.SqlBinaryExpressionTests.BooleanOr(True,False,True)" executed="True" result="Success" success="True" time="0.000" asserts="7" />
+                              <test-case name="Deveel.Data.Sql.Expressions.SqlBinaryExpressionTests.BooleanOr(False,False,False)" executed="True" result="Success" success="True" time="0.000" asserts="7" />
+                            </results>
+                          </test-suite>
+                          <test-case name="Deveel.Data.Sql.Expressions.SqlBinaryExpressionTests.NumericAddToString" executed="True" result="Success" success="True" time="0.007" asserts="4" />
+                          <test-suite type="ParameterizedTest" name="NumericAnd" executed="True" result="Success" success="True" time="0.003" asserts="0">
+                            <results>
+                              <test-case name="Deveel.Data.Sql.Expressions.SqlBinaryExpressionTests.NumericAnd(6574493,13324,4108)" executed="True" result="Success" success="True" time="0.003" asserts="7" />
+                            </results>
+                          </test-suite>
+                          <test-case name="Deveel.Data.Sql.Expressions.SqlBinaryExpressionTests.NumericAndBooleanAdd" executed="True" result="Success" success="True" time="0.002" asserts="7" />
+                          <test-case name="Deveel.Data.Sql.Expressions.SqlBinaryExpressionTests.NumericAndBooleanSubtract" executed="True" result="Success" success="True" time="0.004" asserts="7" />
+                          <test-case name="Deveel.Data.Sql.Expressions.SqlBinaryExpressionTests.NumericAndNumericAdd" executed="True" result="Success" success="True" time="0.001" asserts="7" />
+                          <test-case name="Deveel.Data.Sql.Expressions.SqlBinaryExpressionTests.NumericAndNumericSubtract" executed="True" result="Success" success="True" time="0.001" asserts="7" />
+                          <test-case name="Deveel.Data.Sql.Expressions.SqlBinaryExpressionTests.NumericDivide" executed="True" result="Success" success="True" time="0.002" asserts="7" />
+                          <test-suite type="ParameterizedTest" name="NumericEqualTo" executed="True" result="Success" success="True" time="0.002" asserts="0">
+                            <results>
+                              <test-case name="Deveel.Data.Sql.Expressions.SqlBinaryExpressionTests.NumericEqualTo(9862711.650091d,9862711.650091d,True)" executed="True" result="Success" success="True" time="0.001" asserts="7" />
+                              <test-case name="Deveel.Data.Sql.Expressions.SqlBinaryExpressionTests.NumericEqualTo(12345,2345,False)" executed="True" result="Success" success="True" time="0.000" asserts="7" />
+                              <test-case name="Deveel.Data.Sql.Expressions.SqlBinaryExpressionTests.NumericEqualTo(123456.789d,123456.7d,False)" executed="True" result="Success" success="True" time="0.000" asserts="7" />
+                            </results>
+                          </test-suite>
+                          <test-suite type="ParameterizedTest" name="NumericGreaterThan" executed="True" result="Success" success="True" time="0.002" asserts="0">
+                            <results>
+                              <test-case name="Deveel.Data.Sql.Expressions.SqlBinaryExpressionTests.NumericGreaterThan(123998,123999,False)" executed="True" result="Success" success="True" time="0.001" asserts="7" />
+                              <test-case name="Deveel.Data.Sql.Expressions.SqlBinaryExpressionTests.NumericGreaterThan(8764556.9011d,8764556.901145d,False)" executed="True" result="Success" success="True" time="0.000" asserts="7" />
+                              <test-case name="Deveel.Data.Sql.Expressions.SqlBinaryExpressionTests.NumericGreaterThan(244591,24620,True)" executed="True" result="Success" success="True" time="0.000" asserts="7" />
+                            </results>
+                          </test-suite>
+                          <test-case name="Deveel.Data.Sql.Expressions.SqlBinaryExpressionTests.NumericIsNullFalse" executed="True" result="Success" success="True" time="0.001" asserts="7" />
+                          <test-case name="Deveel.Data.Sql.Expressions.SqlBinaryExpressionTests.NumericIsNullTrue" executed="True" result="Success" success="True" time="0.001" asserts="7" />
+                          <test-case name="Deveel.Data.Sql.Expressions.SqlBinaryExpressionTests.NumericModulo" executed="True" result="Success" success="True" time="0.002" asserts="7" />
+                          <test-case name="Deveel.Data.Sql.Expressions.SqlBinaryExpressionTests.NumericMultiply" executed="True" result="Success" success="True" time="0.001" asserts="7" />
+                          <test-suite type="ParameterizedTest" name="NumericNotEqualTo" executed="True" result="Success" success="True" time="0.002" asserts="0">
+                            <results>
+                              <test-case name="Deveel.Data.Sql.Expressions.SqlBinaryExpressionTests.NumericNotEqualTo(7.6352522E+16d,7.6352522E+16d,False)" executed="True" result="Success" success="True" time="0.001" asserts="7" />
+                              <test-case name="Deveel.Data.Sql.Expressions.SqlBinaryExpressionTests.NumericNotEqualTo(12345,123456,True)" executed="True" result="Success" success="True" time="0.000" asserts="7" />
+                              <test-case name="Deveel.Data.Sql.Expressions.SqlBinaryExpressionTests.NumericNotEqualTo(564255.23899d,564255.23d,True)" executed="True" result="Success" success="True" time="0.000" asserts="7" />
+                            </results>
+                          </test-suite>
+                          <test-suite type="ParameterizedTest" name="NumericOr" executed="True" result="Success" success="True" time="0.002" asserts="0">
+                            <results>
+                              <test-case name="Deveel.Data.Sql.Expressions.SqlBinaryExpressionTests.NumericOr(458849,5526,464375)" executed="True" result="Success" success="True" time="0.002" asserts="7" />
+                            </results>
+                          </test-suite>
+                          <test-suite type="ParameterizedTest" name="NumericSmallerThan" executed="True" result="Success" success="True" time="0.003" asserts="0">
+                            <results>
+                              <test-case name="Deveel.Data.Sql.Expressions.SqlBinaryExpressionTests.NumericSmallerThan(988271,988271,False)" executed="True" result="Success" success="True" time="0.001" asserts="7" />
+                              <test-case name="Deveel.Data.Sql.Expressions.SqlBinaryExpressionTests.NumericSmallerThan(6.2599E+25d,12,False)" executed="True" result="Success" success="True" time="0.000" asserts="7" />
+                              <test-case name="Deveel.Data.Sql.Expressions.SqlBinaryExpressionTests.NumericSmallerThan(1.92839991E+72d,1.92839991E+73d,True)" executed="True" result="Success" success="True" time="0.000" asserts="7" />
+                            </results>
+                          </test-suite>
+                          <test-suite type="ParameterizedTest" name="NumericXOr" executed="True" result="Success" success="True" time="0.002" asserts="0">
+                            <results>
+                              <test-case name="Deveel.Data.Sql.Expressions.SqlBinaryExpressionTests.NumericXOr(567488,90021,653157)" executed="True" result="Success" success="True" time="0.002" asserts="7" />
+                            </results>
+                          </test-suite>
+                          <test-case name="Deveel.Data.Sql.Expressions.SqlBinaryExpressionTests.StringAndStringAdd" executed="True" result="Success" success="True" time="0.003" asserts="7" />
+                          <test-suite type="ParameterizedTest" name="StringLikesPattern" executed="True" result="Success" success="True" time="0.012" asserts="0">
+                            <results>
+                              <test-case name="Deveel.Data.Sql.Expressions.SqlBinaryExpressionTests.StringLikesPattern(&quot;Antonello&quot;,&quot;Anto%&quot;,True)" executed="True" result="Success" success="True" time="0.002" asserts="7" />
+                              <test-case name="Deveel.Data.Sql.Expressions.SqlBinaryExpressionTests.StringLikesPattern(&quot;Antonello&quot;,&quot;Anto&quot;,False)" executed="True" result="Success" success="True" time="0.000" asserts="7" />
+                              <test-case name="Deveel.Data.Sql.Expressions.SqlBinaryExpressionTests.StringLikesPattern(&quot;Antonello&quot;,&quot;%nello&quot;,True)" executed="True" result="Success" success="True" time="0.000" asserts="7" />
+                              <test-case name="Deveel.Data.Sql.Expressions.SqlBinaryExpressionTests.StringLikesPattern(&quot;Antonello&quot;,&quot;Anto_ello&quot;,True)" executed="True" result="Success" success="True" time="0.000" asserts="7" />
+                              <test-case name="Deveel.Data.Sql.Expressions.SqlBinaryExpressionTests.StringLikesPattern(&quot;Antonello&quot;,&quot;Anton__ello&quot;,False)" executed="True" result="Success" success="True" time="0.000" asserts="7" />
+                              <test-case name="Deveel.Data.Sql.Expressions.SqlBinaryExpressionTests.StringLikesPattern(&quot;Antonello&quot;,&quot;%Antonello%&quot;,True)" executed="True" result="Success" success="True" time="0.000" asserts="7" />
+                              <test-case name="Deveel.Data.Sql.Expressions.SqlBinaryExpressionTests.StringLikesPattern(&quot;Antonello&quot;,&quot;Antonello_&quot;,False)" executed="True" result="Success" success="True" time="0.000" asserts="7" />
+                              <test-case name="Deveel.Data.Sql.Expressions.SqlBinaryExpressionTests.StringLikesPattern(&quot;Antonello Provenzano&quot;,&quot;Antonello%&quot;,True)" executed="True" result="Success" success="True" time="0.000" asserts="7" />
+                            </results>
+                          </test-suite>
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="SqlCastExpressionTests" executed="True" result="Success" success="True" time="0.032" asserts="0">
+                        <results>
+                          <test-case name="Deveel.Data.Sql.Expressions.SqlCastExpressionTests.CastBooleanFalseToString" executed="True" result="Success" success="True" time="0.001" asserts="7" />
+                          <test-case name="Deveel.Data.Sql.Expressions.SqlCastExpressionTests.CastBooleanTrueToString" executed="True" result="Success" success="True" time="0.001" asserts="7" />
+                          <test-case name="Deveel.Data.Sql.Expressions.SqlCastExpressionTests.CastDateToString" executed="True" result="Success" success="True" time="0.008" asserts="7" />
+                          <test-case name="Deveel.Data.Sql.Expressions.SqlCastExpressionTests.CastNumberToString" executed="True" result="Inconclusive" success="False" time="0.001" asserts="0">
+                            <reason>
+                              <message><![CDATA[]]></message>
+                            </reason>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Expressions.SqlCastExpressionTests.CastStringToBooleanFalse" executed="True" result="Success" success="True" time="0.001" asserts="7" />
+                          <test-case name="Deveel.Data.Sql.Expressions.SqlCastExpressionTests.CastStringToBooleanTrue" executed="True" result="Success" success="True" time="0.001" asserts="7" />
+                          <test-case name="Deveel.Data.Sql.Expressions.SqlCastExpressionTests.CastStringToDate" executed="True" result="Success" success="True" time="0.011" asserts="7" />
+                          <test-case name="Deveel.Data.Sql.Expressions.SqlCastExpressionTests.CastStringToDateTime" executed="True" result="Success" success="True" time="0.001" asserts="7" />
+                          <test-case name="Deveel.Data.Sql.Expressions.SqlCastExpressionTests.CastStringToInteger" executed="True" result="Success" success="True" time="0.002" asserts="7" />
+                          <test-case name="Deveel.Data.Sql.Expressions.SqlCastExpressionTests.CastStringToNumber" executed="True" result="Success" success="True" time="0.001" asserts="7" />
+                          <test-case name="Deveel.Data.Sql.Expressions.SqlCastExpressionTests.CastStringToTime" executed="True" result="Success" success="True" time="0.002" asserts="7" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="SqlDateExpressionTests" executed="True" result="Failure" success="False" time="0.001" asserts="0">
+                        <results>
+                          <test-case name="Deveel.Data.Sql.Expressions.SqlDateExpressionTests.DateSmallerThanOtherDate" executed="True" result="Failure" success="False" time="0.001" asserts="1">
+                            <failure>
+                              <message><![CDATA[  Expected: No Exception to be thrown
+  But was:   (Could not parse input expression: see inner exception for details.)
+  at Deveel.Data.Sql.Expressions.SqlExpression.Parse (System.String s, ISystemContext context) <0x40b28070 + 0x00203> in <filename unknown>:0 
+  at Deveel.Data.Sql.Expressions.SqlExpression.Parse (System.String s) <0x40b28040 + 0x0000f> in <filename unknown>:0 
+  at Deveel.Data.Sql.Expressions.SqlDateExpressionTests+<DateSmallerThanOtherDate>c__AnonStorey0.<>m__0 () [0x00000] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Sql.Expressions/SqlDateExpressionTests.cs:29 
+  at NUnit.Framework.Constraints.VoidInvocationDescriptor.Invoke () <0x4168b3f0 + 0x00019> in <filename unknown>:0 
+  at NUnit.Framework.Constraints.ExceptionInterceptor.Intercept (System.Object invocation) <0x4168ac70 + 0x00148> in <filename unknown>:0 
+]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Sql.Expressions.SqlDateExpressionTests.DateSmallerThanOtherDate () [0x0000e] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Sql.Expressions/SqlDateExpressionTests.cs:29
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="SqlExpressionParseException" executed="True" result="Failure" success="False" time="0.012" asserts="0">
+                        <results>
+                          <test-case name="Deveel.Data.Sql.Expressions.SqlExpressionParseException.ChainedAddAndMultipleNumeric" executed="True" result="Failure" success="False" time="0.001" asserts="1">
+                            <failure>
+                              <message><![CDATA[  Expected: No Exception to be thrown
+  But was:   (Could not parse input expression: see inner exception for details.)
+  at Deveel.Data.Sql.Expressions.SqlExpression.Parse (System.String s, ISystemContext context) <0x40b28070 + 0x00203> in <filename unknown>:0 
+  at Deveel.Data.Sql.Expressions.SqlExpression.Parse (System.String s) <0x40b28040 + 0x0000f> in <filename unknown>:0 
+  at Deveel.Data.Sql.Expressions.SqlExpressionParseException+<ChainedAddAndMultipleNumeric>c__AnonStorey2.<>m__0 () [0x00000] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Sql.Expressions/SqlExpressionParseTests.cs:62 
+  at NUnit.Framework.Constraints.VoidInvocationDescriptor.Invoke () <0x4168b3f0 + 0x00019> in <filename unknown>:0 
+  at NUnit.Framework.Constraints.ExceptionInterceptor.Intercept (System.Object invocation) <0x4168ac70 + 0x00148> in <filename unknown>:0 
+]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Sql.Expressions.SqlExpressionParseException.ChainedAddAndMultipleNumeric () [0x0000e] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Sql.Expressions/SqlExpressionParseTests.cs:62
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Expressions.SqlExpressionParseException.SimpleNumericAdd" executed="True" result="Failure" success="False" time="0.001" asserts="1">
+                            <failure>
+                              <message><![CDATA[  Expected: No Exception to be thrown
+  But was:   (Could not parse input expression: see inner exception for details.)
+  at Deveel.Data.Sql.Expressions.SqlExpression.Parse (System.String s, ISystemContext context) <0x40b28070 + 0x00203> in <filename unknown>:0 
+  at Deveel.Data.Sql.Expressions.SqlExpression.Parse (System.String s) <0x40b28040 + 0x0000f> in <filename unknown>:0 
+  at Deveel.Data.Sql.Expressions.SqlExpressionParseException+<SimpleNumericAdd>c__AnonStorey0.<>m__0 () [0x00000] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Sql.Expressions/SqlExpressionParseTests.cs:30 
+  at NUnit.Framework.Constraints.VoidInvocationDescriptor.Invoke () <0x4168b3f0 + 0x00019> in <filename unknown>:0 
+  at NUnit.Framework.Constraints.ExceptionInterceptor.Intercept (System.Object invocation) <0x4168ac70 + 0x00148> in <filename unknown>:0 
+]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Sql.Expressions.SqlExpressionParseException.SimpleNumericAdd () [0x0000e] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Sql.Expressions/SqlExpressionParseTests.cs:30
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Expressions.SqlExpressionParseException.SimpleNumericSubtract" executed="True" result="Failure" success="False" time="0.001" asserts="1">
+                            <failure>
+                              <message><![CDATA[  Expected: No Exception to be thrown
+  But was:   (Could not parse input expression: see inner exception for details.)
+  at Deveel.Data.Sql.Expressions.SqlExpression.Parse (System.String s, ISystemContext context) <0x40b28070 + 0x00203> in <filename unknown>:0 
+  at Deveel.Data.Sql.Expressions.SqlExpression.Parse (System.String s) <0x40b28040 + 0x0000f> in <filename unknown>:0 
+  at Deveel.Data.Sql.Expressions.SqlExpressionParseException+<SimpleNumericSubtract>c__AnonStorey1.<>m__0 () [0x00000] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Sql.Expressions/SqlExpressionParseTests.cs:46 
+  at NUnit.Framework.Constraints.VoidInvocationDescriptor.Invoke () <0x4168b3f0 + 0x00019> in <filename unknown>:0 
+  at NUnit.Framework.Constraints.ExceptionInterceptor.Intercept (System.Object invocation) <0x4168ac70 + 0x00148> in <filename unknown>:0 
+]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Sql.Expressions.SqlExpressionParseException.SimpleNumericSubtract () [0x0000e] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Sql.Expressions/SqlExpressionParseTests.cs:46
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="SqlFunctionCallExpressionTests" executed="True" result="Inconclusive" success="False" time="0.000" asserts="0" />
+                      <test-suite type="TestFixture" name="SqlQueryExpressionTests" executed="True" result="Failure" success="False" time="0.611" asserts="0">
+                        <results>
+                          <test-case name="Deveel.Data.Sql.Expressions.SqlQueryExpressionTests.ExecuteSelectAll" executed="True" result="Error" success="False" time="0.062" asserts="0">
+                            <categories>
+                              <category name="System" />
+                            </categories>
+                            <failure>
+                              <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Expressions.SqlQueryExpressionTests.ParseSelectFunction" executed="True" result="Error" success="False" time="0.073" asserts="0">
+                            <categories>
+                              <category name="SQL Parse" />
+                            </categories>
+                            <failure>
+                              <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Expressions.SqlQueryExpressionTests.ParseSelectGroupBy" executed="True" result="Error" success="False" time="0.065" asserts="0">
+                            <categories>
+                              <category name="SQL Parse" />
+                            </categories>
+                            <failure>
+                              <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Expressions.SqlQueryExpressionTests.ParseSelectSubQuery" executed="True" result="Error" success="False" time="0.064" asserts="0">
+                            <categories>
+                              <category name="SQL Parse" />
+                            </categories>
+                            <failure>
+                              <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Expressions.SqlQueryExpressionTests.ParseSelectWithFromClause" executed="True" result="Error" success="False" time="0.066" asserts="0">
+                            <categories>
+                              <category name="SQL Parse" />
+                            </categories>
+                            <failure>
+                              <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Expressions.SqlQueryExpressionTests.ParseSelectWithInnerJoin" executed="True" result="Error" success="False" time="0.130" asserts="0">
+                            <categories>
+                              <category name="SQL Parse" />
+                            </categories>
+                            <failure>
+                              <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Expressions.SqlQueryExpressionTests.ParseSelectWithNaturalJoin" executed="True" result="Error" success="False" time="0.065" asserts="0">
+                            <categories>
+                              <category name="SQL Parse" />
+                            </categories>
+                            <failure>
+                              <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Expressions.SqlQueryExpressionTests.ParseSimpleQuery" executed="True" result="Error" success="False" time="0.064" asserts="0">
+                            <categories>
+                              <category name="SQL Parse" />
+                            </categories>
+                            <failure>
+                              <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="SqlUnaryExpressionTests" executed="True" result="Success" success="True" time="0.008" asserts="0">
+                        <results>
+                          <test-suite type="ParameterizedTest" name="BooleanNegate" executed="True" result="Success" success="True" time="0.002" asserts="0">
+                            <results>
+                              <test-case name="Deveel.Data.Sql.Expressions.SqlUnaryExpressionTests.BooleanNegate(True,False)" executed="True" result="Success" success="True" time="0.001" asserts="7" />
+                              <test-case name="Deveel.Data.Sql.Expressions.SqlUnaryExpressionTests.BooleanNegate(False,True)" executed="True" result="Success" success="True" time="0.000" asserts="7" />
+                            </results>
+                          </test-suite>
+                          <test-suite type="ParameterizedTest" name="NumericNegate" executed="True" result="Success" success="True" time="0.002" asserts="0">
+                            <results>
+                              <test-case name="Deveel.Data.Sql.Expressions.SqlUnaryExpressionTests.NumericNegate(884920009.9948d,-884920009.9948d)" executed="True" result="Success" success="True" time="0.001" asserts="7" />
+                              <test-case name="Deveel.Data.Sql.Expressions.SqlUnaryExpressionTests.NumericNegate(-92338.122d,92338.122d)" executed="True" result="Success" success="True" time="0.000" asserts="7" />
+                            </results>
+                          </test-suite>
+                          <test-suite type="ParameterizedTest" name="NumericPlus" executed="True" result="Success" success="True" time="0.002" asserts="0">
+                            <results>
+                              <test-case name="Deveel.Data.Sql.Expressions.SqlUnaryExpressionTests.NumericPlus(4637377,4637377)" executed="True" result="Success" success="True" time="0.001" asserts="7" />
+                              <test-case name="Deveel.Data.Sql.Expressions.SqlUnaryExpressionTests.NumericPlus(-1929934,-1929934)" executed="True" result="Success" success="True" time="0.000" asserts="7" />
+                            </results>
+                          </test-suite>
+                        </results>
+                      </test-suite>
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="InsertTests" executed="True" result="Failure" success="False" time="0.066" asserts="0">
+                    <results>
+                      <test-case name="Deveel.Data.Sql.InsertTests.InsertRegular" executed="True" result="Error" success="False" time="0.066" asserts="0">
+                        <failure>
+                          <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                          <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="JoinTableTests" executed="True" result="Failure" success="False" time="0.065" asserts="0">
+                    <results>
+                      <test-case name="Deveel.Data.Sql.JoinTableTests.NaturalInnerJoin" executed="True" result="Error" success="False" time="0.064" asserts="0">
+                        <failure>
+                          <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                          <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="MutableTableTests" executed="True" result="Failure" success="False" time="0.141" asserts="0">
+                    <results>
+                      <test-case name="Deveel.Data.Sql.MutableTableTests.SameSessionDeleteFrom" executed="True" result="Error" success="False" time="0.066" asserts="0">
+                        <failure>
+                          <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                          <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                      <test-case name="Deveel.Data.Sql.MutableTableTests.SameSessionInsertInto" executed="True" result="Error" success="False" time="0.072" asserts="0">
+                        <failure>
+                          <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                          <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                    </results>
+                  </test-suite>
+                  <test-suite type="Namespace" name="Objects" executed="True" result="Success" success="True" time="0.068" asserts="0">
+                    <results>
+                      <test-suite type="TestFixture" name="SqlBooleanTest" executed="True" result="Success" success="True" time="0.012" asserts="0">
+                        <categories>
+                          <category name="SQL Objects" />
+                          <category name="Booleans" />
+                        </categories>
+                        <results>
+                          <test-case name="Deveel.Data.Sql.Objects.SqlBooleanTest.Compare_Equal" executed="True" result="Success" success="True" time="0.001" asserts="5">
+                            <categories>
+                              <category name="Comparison" />
+                            </categories>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Objects.SqlBooleanTest.Compare_NotEqual" executed="True" result="Success" success="True" time="0.000" asserts="5">
+                            <categories>
+                              <category name="Comparison" />
+                            </categories>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Objects.SqlBooleanTest.Compare_ToBooleanNull" executed="True" result="Success" success="True" time="0.000" asserts="5">
+                            <categories>
+                              <category name="Comparison" />
+                            </categories>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Objects.SqlBooleanTest.Compare_ToNull" executed="True" result="Success" success="True" time="0.001" asserts="5">
+                            <categories>
+                              <category name="Comparison" />
+                            </categories>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Objects.SqlBooleanTest.Compare_ToNumber_InRange" executed="True" result="Success" success="True" time="0.001" asserts="10">
+                            <categories>
+                              <category name="Comparison" />
+                              <category name="Numbers" />
+                            </categories>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Objects.SqlBooleanTest.Compare_ToNumber_OutOfRange" executed="True" result="Success" success="True" time="0.001" asserts="5">
+                            <categories>
+                              <category name="Comparison" />
+                              <category name="Numbers" />
+                            </categories>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Objects.SqlBooleanTest.Convert_ToString" executed="True" result="Success" success="True" time="0.001" asserts="3">
+                            <categories>
+                              <category name="Conversion" />
+                            </categories>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Objects.SqlBooleanTest.CreateFromBoolean" executed="True" result="Success" success="True" time="0.000" asserts="6" />
+                          <test-case name="Deveel.Data.Sql.Objects.SqlBooleanTest.CreateFromByte" executed="True" result="Success" success="True" time="0.000" asserts="6" />
+                          <test-case name="Deveel.Data.Sql.Objects.SqlBooleanTest.Equality_False" executed="True" result="Success" success="True" time="0.000" asserts="2">
+                            <categories>
+                              <category name="Operators" />
+                            </categories>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Objects.SqlBooleanTest.Equality_ToNull_True" executed="True" result="Success" success="True" time="0.000" asserts="1">
+                            <categories>
+                              <category name="Operators" />
+                            </categories>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Objects.SqlBooleanTest.Equality_True" executed="True" result="Success" success="True" time="0.000" asserts="1">
+                            <categories>
+                              <category name="Operators" />
+                            </categories>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="SqlDateTimeTests" executed="True" result="Success" success="True" time="0.011" asserts="0">
+                        <categories>
+                          <category name="SQL Objects" />
+                          <category name="Date Time" />
+                        </categories>
+                        <results>
+                          <test-case name="Deveel.Data.Sql.Objects.SqlDateTimeTests.Add_MonthSpan" executed="True" result="Success" success="True" time="0.002" asserts="8">
+                            <categories>
+                              <category name="Year To Month" />
+                            </categories>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Objects.SqlDateTimeTests.Add_TimeSpan_NoDays" executed="True" result="Success" success="True" time="0.001" asserts="7">
+                            <categories>
+                              <category name="Day To Second Interval" />
+                            </categories>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Objects.SqlDateTimeTests.Equality_True" executed="True" result="Success" success="True" time="0.000" asserts="1">
+                            <categories>
+                              <category name="Operators" />
+                            </categories>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Objects.SqlDateTimeTests.Greater_True" executed="True" result="Success" success="True" time="0.001" asserts="1">
+                            <categories>
+                              <category name="Operators" />
+                            </categories>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Objects.SqlDateTimeTests.Inequality_True" executed="True" result="Success" success="True" time="0.000" asserts="1">
+                            <categories>
+                              <category name="Operators" />
+                            </categories>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Objects.SqlDateTimeTests.Operator_Add_TimeSpan" executed="True" result="Success" success="True" time="0.000" asserts="7">
+                            <categories>
+                              <category name="Operators" />
+                              <category name="Day To Second Interval" />
+                            </categories>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Objects.SqlDateTimeTests.Operator_Subtract_TimeSpan" executed="True" result="Success" success="True" time="0.001" asserts="7">
+                            <categories>
+                              <category name="Day To Second Interval" />
+                              <category name="Operators" />
+                            </categories>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Objects.SqlDateTimeTests.Subtract_MonthSpan" executed="True" result="Success" success="True" time="0.001" asserts="8">
+                            <categories>
+                              <category name="Year To Month" />
+                            </categories>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Objects.SqlDateTimeTests.Subtract_TimeSpan_NoDays" executed="True" result="Success" success="True" time="0.000" asserts="7">
+                            <categories>
+                              <category name="Day To Second Interval" />
+                            </categories>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="SqlLongStringTests" executed="True" result="Success" success="True" time="0.009" asserts="0">
+                        <results>
+                          <test-case name="Deveel.Data.Sql.Objects.SqlLongStringTests.Create_Unicode_Uncompressed" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                          <test-case name="Deveel.Data.Sql.Objects.SqlLongStringTests.WriteAndRead_Unicode" executed="True" result="Success" success="True" time="0.006" asserts="9" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="SqlNumberTests" executed="True" result="Success" success="True" time="0.009" asserts="0">
+                        <categories>
+                          <category name="SQL Objects" />
+                          <category name="Numbers" />
+                        </categories>
+                        <results>
+                          <test-case name="Deveel.Data.Sql.Objects.SqlNumberTests.BigNumber_Greater_True" executed="True" result="Success" success="True" time="0.002" asserts="1" />
+                          <test-case name="Deveel.Data.Sql.Objects.SqlNumberTests.Convert_ToBoolean_Success" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                          <test-case name="Deveel.Data.Sql.Objects.SqlNumberTests.Create_FromBigInt" executed="True" result="Success" success="True" time="0.001" asserts="7" />
+                          <test-case name="Deveel.Data.Sql.Objects.SqlNumberTests.Create_FromDouble" executed="True" result="Success" success="True" time="0.000" asserts="7" />
+                          <test-case name="Deveel.Data.Sql.Objects.SqlNumberTests.Create_FromInteger" executed="True" result="Success" success="True" time="0.000" asserts="7" />
+                          <test-case name="Deveel.Data.Sql.Objects.SqlNumberTests.Integer_Greater_True" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                          <test-case name="Deveel.Data.Sql.Objects.SqlNumberTests.Parse_BigDecimal" executed="True" result="Success" success="True" time="0.002" asserts="5" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="SqlStringTests" executed="True" result="Success" success="True" time="0.022" asserts="0">
+                        <categories>
+                          <category name="SQL Objects" />
+                        </categories>
+                        <results>
+                          <test-case name="Deveel.Data.Sql.Objects.SqlStringTests.String_Compare_Equal" executed="True" result="Success" success="True" time="0.000" asserts="1">
+                            <categories>
+                              <category name="Strings" />
+                            </categories>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Objects.SqlStringTests.String_Concat" executed="True" result="Success" success="True" time="0.002" asserts="2">
+                            <categories>
+                              <category name="Strings" />
+                            </categories>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Objects.SqlStringTests.String_Convert_BigNumber" executed="True" result="Success" success="True" time="0.002" asserts="5">
+                            <categories>
+                              <category name="Conversion" />
+                              <category name="Numbers" />
+                            </categories>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Objects.SqlStringTests.String_Convert_BooleanFalse" executed="True" result="Success" success="True" time="0.001" asserts="3">
+                            <categories>
+                              <category name="Conversion" />
+                              <category name="Booleans" />
+                            </categories>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Objects.SqlStringTests.String_Convert_BooleanNull" executed="True" result="Success" success="True" time="0.000" asserts="3">
+                            <categories>
+                              <category name="Conversion" />
+                              <category name="Booleans" />
+                            </categories>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Objects.SqlStringTests.String_Convert_BooleanTrue" executed="True" result="Success" success="True" time="0.000" asserts="3">
+                            <categories>
+                              <category name="Conversion" />
+                              <category name="Booleans" />
+                            </categories>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Objects.SqlStringTests.String_Convert_Date" executed="True" result="Success" success="True" time="0.001" asserts="10">
+                            <categories>
+                              <category name="Conversion" />
+                              <category name="Date Time" />
+                            </categories>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Objects.SqlStringTests.String_Convert_Time" executed="True" result="Success" success="True" time="0.001" asserts="9">
+                            <categories>
+                              <category name="Conversion" />
+                              <category name="Date Time" />
+                            </categories>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Objects.SqlStringTests.String_Convert_TimeStamp" executed="True" result="Success" success="True" time="0.001" asserts="10">
+                            <categories>
+                              <category name="Conversion" />
+                              <category name="Date Time" />
+                            </categories>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Objects.SqlStringTests.String_Create" executed="True" result="Success" success="True" time="0.001" asserts="3">
+                            <categories>
+                              <category name="Strings" />
+                            </categories>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Objects.SqlStringTests.String_Equals" executed="True" result="Success" success="True" time="0.000" asserts="1">
+                            <categories>
+                              <category name="Strings" />
+                            </categories>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Objects.SqlStringTests.String_EqualsToNull" executed="True" result="Success" success="True" time="0.000" asserts="3" />
+                        </results>
+                      </test-suite>
+                    </results>
+                  </test-suite>
+                  <test-suite type="Namespace" name="Parser" executed="True" result="Failure" success="False" time="0.014" asserts="0">
+                    <results>
+                      <test-suite type="TestFixture" name="PlSqlBlockTests" executed="True" result="Failure" success="False" time="0.001" asserts="0">
+                        <results>
+                          <test-case name="Deveel.Data.Sql.Parser.PlSqlBlockTests.ParseCreateSimpleTrigger" executed="True" result="Failure" success="False" time="0.001" asserts="3">
+                            <failure>
+                              <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Sql.Parser.PlSqlBlockTests.ParseCreateSimpleTrigger () [0x0002a] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Sql.Parser/PlSqlBlockTests.cs:34
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="SqlParseTests" executed="True" result="Success" success="True" time="0.008" asserts="0">
+                        <results>
+                          <test-case name="Deveel.Data.Sql.Parser.SqlParseTests.InsertIntoSyntaxError" executed="True" result="Success" success="True" time="0.008" asserts="3" />
+                        </results>
+                      </test-suite>
+                    </results>
+                  </test-suite>
+                  <test-suite type="Namespace" name="Statements" executed="True" result="Failure" success="False" time="1.260" asserts="0">
+                    <results>
+                      <test-suite type="TestFixture" name="AlterTableStatementTests" executed="True" result="Failure" success="False" time="0.069" asserts="0">
+                        <results>
+                          <test-case name="Deveel.Data.Sql.Statements.AlterTableStatementTests.AlterTableAddColumn" executed="True" result="Error" success="False" time="0.068" asserts="0">
+                            <failure>
+                              <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="CreateTableStatementTests" executed="True" result="Failure" success="False" time="0.212" asserts="0">
+                        <results>
+                          <test-case name="Deveel.Data.Sql.Statements.CreateTableStatementTests.ParseWithColumnAndTableConstraints" executed="True" result="Error" success="False" time="0.072" asserts="0">
+                            <failure>
+                              <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Statements.CreateTableStatementTests.SimpleCreate" executed="True" result="Error" success="False" time="0.065" asserts="0">
+                            <failure>
+                              <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Statements.CreateTableStatementTests.WithColumnDefault" executed="True" result="Error" success="False" time="0.069" asserts="0">
+                            <failure>
+                              <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="CreateViewStatementTests" executed="True" result="Failure" success="False" time="0.075" asserts="0">
+                        <results>
+                          <test-case name="Deveel.Data.Sql.Statements.CreateViewStatementTests.ExecuteSimpleCreateView" executed="True" result="Error" success="False" time="0.075" asserts="0">
+                            <failure>
+                              <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="DeclareCursorStatementTests" executed="True" result="Inconclusive" success="False" time="0.000" asserts="0" />
+                      <test-suite type="TestFixture" name="DropTableStatementTests" executed="True" result="Failure" success="False" time="0.221" asserts="0">
+                        <results>
+                          <test-case name="Deveel.Data.Sql.Statements.DropTableStatementTests.DropAllTables" executed="True" result="Error" success="False" time="0.066" asserts="0">
+                            <failure>
+                              <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Statements.DropTableStatementTests.DropNonReferencedTable" executed="True" result="Error" success="False" time="0.070" asserts="0">
+                            <failure>
+                              <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Statements.DropTableStatementTests.DropReferencedTable" executed="True" result="Error" success="False" time="0.079" asserts="0">
+                            <failure>
+                              <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="GrantTests" executed="True" result="Inconclusive" success="False" time="0.000" asserts="0" />
+                      <test-suite type="TestFixture" name="InsertIntoStatementTests" executed="True" result="Inconclusive" success="False" time="0.000" asserts="0" />
+                      <test-suite type="TestFixture" name="SelectStatementTests" executed="True" result="Failure" success="False" time="0.584" asserts="0">
+                        <results>
+                          <test-case name="Deveel.Data.Sql.Statements.SelectStatementTests.ExecuteSimpleOrderedSelect" executed="True" result="Error" success="False" time="0.065" asserts="0">
+                            <failure>
+                              <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Statements.SelectStatementTests.ExecuteSimpleSelect" executed="True" result="Error" success="False" time="0.071" asserts="0">
+                            <failure>
+                              <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Statements.SelectStatementTests.ParseWithFromClause" executed="True" result="Error" success="False" time="0.078" asserts="0">
+                            <failure>
+                              <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Statements.SelectStatementTests.ParseWithFunction" executed="True" result="Error" success="False" time="0.066" asserts="0">
+                            <failure>
+                              <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Statements.SelectStatementTests.ParseWithOrderByClause" executed="True" result="Error" success="False" time="0.069" asserts="0">
+                            <failure>
+                              <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Statements.SelectStatementTests.ParseWithVariable" executed="True" result="Error" success="False" time="0.077" asserts="0">
+                            <failure>
+                              <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Statements.SelectStatementTests.SelectAliasedWithGroupedExpression" executed="True" result="Error" success="False" time="0.067" asserts="0">
+                            <failure>
+                              <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Statements.SelectStatementTests.SelectFromAliased" executed="True" result="Error" success="False" time="0.071" asserts="0">
+                            <failure>
+                              <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="UpdateStatementTests" executed="True" result="Failure" success="False" time="0.079" asserts="0">
+                        <results>
+                          <test-case name="Deveel.Data.Sql.Statements.UpdateStatementTests.UpdateOneRow" executed="True" result="Error" success="False" time="0.079" asserts="0">
+                            <failure>
+                              <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="TableQueryTests" executed="True" result="Success" success="True" time="0.008" asserts="0">
+                    <results>
+                      <test-suite type="ParameterizedTest" name="SelectRowsWhereStaticId" executed="True" result="Success" success="True" time="0.006" asserts="0">
+                        <results>
+                          <test-case name="Deveel.Data.Sql.TableQueryTests.SelectRowsWhereStaticId(1,0)" executed="True" result="Success" success="True" time="0.005" asserts="3" />
+                          <test-case name="Deveel.Data.Sql.TableQueryTests.SelectRowsWhereStaticId(3,2)" executed="True" result="Success" success="True" time="0.000" asserts="3" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="ParameterizedTest" name="SelectRowsWhereStaticName" executed="True" result="Success" success="True" time="0.001" asserts="0">
+                        <results>
+                          <test-case name="Deveel.Data.Sql.TableQueryTests.SelectRowsWhereStaticName(&quot;test2&quot;,1)" executed="True" result="Success" success="True" time="0.000" asserts="3" />
+                          <test-case name="Deveel.Data.Sql.TableQueryTests.SelectRowsWhereStaticName(&quot;test3&quot;,2)" executed="True" result="Success" success="True" time="0.000" asserts="3" />
+                        </results>
+                      </test-suite>
+                    </results>
+                  </test-suite>
+                  <test-suite type="Namespace" name="Triggers" executed="True" result="Failure" success="False" time="0.226" asserts="0">
+                    <results>
+                      <test-suite type="TestFixture" name="TriggerListenTests" executed="True" result="Failure" success="False" time="0.072" asserts="0">
+                        <results>
+                          <test-case name="Deveel.Data.Sql.Triggers.TriggerListenTests.Insert_NoTriggers" executed="True" result="Error" success="False" time="0.072" asserts="0">
+                            <failure>
+                              <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="TriggerTests" executed="True" result="Failure" success="False" time="0.149" asserts="0">
+                        <results>
+                          <test-case name="Deveel.Data.Sql.Triggers.TriggerTests.CreateCallbackTrigger" executed="True" result="Error" success="False" time="0.079" asserts="0">
+                            <failure>
+                              <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                          <test-case name="Deveel.Data.Sql.Triggers.TriggerTests.CreateProcedureTrigger" executed="True" result="Error" success="False" time="0.067" asserts="0">
+                            <failure>
+                              <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                              <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                    </results>
+                  </test-suite>
+                  <test-suite type="Namespace" name="Variables" executed="True" result="Success" success="True" time="0.004" asserts="0">
+                    <results>
+                      <test-suite type="TestFixture" name="VariableManagerTests" executed="True" result="Success" success="True" time="0.004" asserts="0">
+                        <results>
+                          <test-case name="Deveel.Data.Sql.Variables.VariableManagerTests.DefineVariable" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                          <test-suite type="ParameterizedTest" name="DropVariable" executed="True" result="Success" success="True" time="0.001" asserts="0">
+                            <results>
+                              <test-case name="Deveel.Data.Sql.Variables.VariableManagerTests.DropVariable(&quot;a&quot;,True)" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                              <test-case name="Deveel.Data.Sql.Variables.VariableManagerTests.DropVariable(&quot;b&quot;,False)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                            </results>
+                          </test-suite>
+                          <test-case name="Deveel.Data.Sql.Variables.VariableManagerTests.GetVariable" executed="True" result="Success" success="True" time="0.000" asserts="5" />
+                        </results>
+                      </test-suite>
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="VariableTests" executed="True" result="Failure" success="False" time="0.305" asserts="0">
+                    <results>
+                      <test-case name="Deveel.Data.Sql.VariableTests.DeclareVariable" executed="True" result="Error" success="False" time="0.079" asserts="0">
+                        <failure>
+                          <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                          <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                      <test-case name="Deveel.Data.Sql.VariableTests.GetVariable" executed="True" result="Error" success="False" time="0.068" asserts="0">
+                        <failure>
+                          <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                          <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                      <test-case name="Deveel.Data.Sql.VariableTests.SetExistingVariable" executed="True" result="Error" success="False" time="0.068" asserts="0">
+                        <failure>
+                          <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                          <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                      <test-case name="Deveel.Data.Sql.VariableTests.SetNotExistingVariable" executed="True" result="Error" success="False" time="0.080" asserts="0">
+                        <failure>
+                          <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                          <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+              <test-suite type="Namespace" name="Store" executed="True" result="Failure" success="False" time="0.108" asserts="0">
+                <results>
+                  <test-suite type="Namespace" name="Journaled" executed="True" result="Inconclusive" success="False" time="0.001" asserts="0">
+                    <results>
+                      <test-suite type="TestFixture" name="JournaledFileStoreTests" executed="True" result="Inconclusive" success="False" time="0.000" asserts="0" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="SingleFileStoreTests" executed="True" result="Failure" success="False" time="0.107" asserts="0">
+                    <results>
+                      <test-case name="Deveel.Data.Store.SingleFileStoreTests.CreateNewDatabase" executed="True" result="Error" success="False" time="0.104" asserts="0">
+                        <failure>
+                          <message><![CDATA[Deveel.Data.Configuration.DatabaseConfigurationException : Could not initialize the storage system
+  ----> System.IO.IOException : Encryption failed]]></message>
+                          <stack-trace><![CDATA[at Deveel.Data.DatabaseContext.InitStorageSystem () <0x416ea280 + 0x00153> in <filename unknown>:0
+at Deveel.Data.DatabaseContext..ctor (ISystemContext systemContext, IConfiguration configuration) <0x416e97e0 + 0x00103> in <filename unknown>:0
+at Deveel.Data.SystemContext.CreateDatabaseContext (IConfiguration configuration) <0x416e9790 + 0x00033> in <filename unknown>:0
+at Deveel.Data.SystemContext.Deveel.Data.ISystemContext.CreateDatabaseContext (IConfiguration configuration) <0x416d8f70 + 0x0002b> in <filename unknown>:0
+at Deveel.Data.DatabaseSystem.CreateDatabase (IConfiguration configuration, System.String adminUser, System.String adminPassword) <0x416d89c0 + 0x0017a> in <filename unknown>:0
+at Deveel.Data.Store.SingleFileStoreTests.CreateNewDatabase () [0x00019] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Store/SingleFileStoreTests.cs:79
+--IOException
+at System.IO.FileStream..ctor (System.String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, Boolean anonymous, FileOptions options) [0x00335] in /var/tmp/portage/dev-lang/mono-4.2.2.10-r1/work/mono-4.2.2/mcs/class/corlib/System.IO/FileStream.cs:290
+at System.IO.FileStream..ctor (System.String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options) [0x00000] in /var/tmp/portage/dev-lang/mono-4.2.2.10-r1/work/mono-4.2.2/mcs/class/corlib/System.IO/FileStream.cs:112
+at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions)
+at Deveel.Data.Store.LocalFile..ctor (System.String fileName, Boolean readOnly) <0x40b71030 + 0x000bb> in <filename unknown>:0
+at Deveel.Data.Store.LocalFileSystem.CreateFile (System.String fileName) <0x40b70f00 + 0x0007f> in <filename unknown>:0
+at Deveel.Data.Store.LocalFileSystem.Deveel.Data.Store.IFileSystem.CreateFile (System.String path) <0x40b70ed0 + 0x00013> in <filename unknown>:0
+at Deveel.Data.Store.SingleFileStoreSystem.OpenOrCreateFile () <0x40b70ca0 + 0x000aa> in <filename unknown>:0
+at Deveel.Data.Store.SingleFileStoreSystem..ctor (IDatabaseContext context, IConfiguration configuration) <0x40b706e0 + 0x000b7> in <filename unknown>:0
+at (wrapper dynamic-method) System.Object:lambda_method (System.Runtime.CompilerServices.Closure)
+at DryIoc.Scope.TryGetOrAdd (Int32 id, DryIoc.CreateScopedValue createValue) <0x416eaae0 + 0x00118> in <filename unknown>:0
+at DryIoc.Scope.GetOrAdd (Int32 id, DryIoc.CreateScopedValue createValue) <0x416e6e60 + 0x0004b> in <filename unknown>:0
+at (wrapper dynamic-method) System.Object:lambda_method (System.Runtime.CompilerServices.Closure,object[],DryIoc.IResolverContext,DryIoc.IScope)
+at DryIoc.Container.DryIoc.IResolver.Resolve (System.Type serviceType, System.Object serviceKey, Boolean ifUnresolvedReturnDefault, System.Type requiredServiceType, DryIoc.RequestInfo preResolveParent, IScope scope) <0x416a3e10 + 0x003d8> in <filename unknown>:0
+at DryIoc.Resolver.Resolve (IResolver resolver, System.Type serviceType, System.Object serviceKey, IfUnresolved ifUnresolved, System.Type requiredServiceType) <0x416b4ac0 + 0x0009e> in <filename unknown>:0
+at Deveel.Data.Services.ServiceContainer.Resolve (System.Type serviceType, System.Object name) <0x416b4990 + 0x00077> in <filename unknown>:0
+at Deveel.Data.Services.ScopeExtensions.Resolve[TService] (IScope scope, System.Object serviceKey) <0x416b48f0 + 0x0003a> in <filename unknown>:0
+at Deveel.Data.ContextExtensions.ResolveService[TService] (IContext context, System.Object serviceKey) <0x416ea420 + 0x0004b> in <filename unknown>:0
+at Deveel.Data.DatabaseContext.InitStorageSystem () <0x416ea280 + 0x0004f> in <filename unknown>:0
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="StringObjectTests" executed="True" result="Success" success="True" time="0.006" asserts="0">
+                <categories>
+                  <category name="Data Objects" />
+                  <category name="Strings" />
+                </categories>
+                <results>
+                  <test-case name="Deveel.Data.StringObjectTests.BasicVarChar_Add" executed="True" result="Success" success="True" time="0.001" asserts="6" />
+                  <test-case name="Deveel.Data.StringObjectTests.BasicVarChar_Compare" executed="True" result="Success" success="True" time="0.000" asserts="4" />
+                  <test-case name="Deveel.Data.StringObjectTests.BasicVarChar_Convert_ToBoolean_Success" executed="True" result="Success" success="True" time="0.001" asserts="8">
+                    <categories>
+                      <category name="Booleans" />
+                    </categories>
+                  </test-case>
+                  <test-case name="Deveel.Data.StringObjectTests.BasicVarChar_Convert_ToInteger_Fail" executed="True" result="Success" success="True" time="0.001" asserts="7">
+                    <categories>
+                      <category name="Numbers" />
+                    </categories>
+                  </test-case>
+                  <test-case name="Deveel.Data.StringObjectTests.BasicVarChar_Convert_ToInteger_Success" executed="True" result="Success" success="True" time="0.000" asserts="8" />
+                  <test-case name="Deveel.Data.StringObjectTests.BasicVarChar_Create" executed="True" result="Success" success="True" time="0.000" asserts="5" />
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="SystemTests" executed="True" result="Success" success="True" time="0.010" asserts="0">
+                <results>
+                  <test-case name="Deveel.Data.SystemTests.FromDefaultConfig" executed="True" result="Success" success="True" time="0.001" asserts="5" />
+                  <test-case name="Deveel.Data.SystemTests.ResolveInstanceOfServiceByInterface" executed="True" result="Success" success="True" time="0.003" asserts="8" />
+                  <test-case name="Deveel.Data.SystemTests.ResolveManyServicesForInterface" executed="True" result="Success" success="True" time="0.002" asserts="8" />
+                  <test-case name="Deveel.Data.SystemTests.ResolveSingleServiceFromRegister" executed="True" result="Success" success="True" time="0.002" asserts="6" />
+                </results>
+              </test-suite>
+              <test-suite type="Namespace" name="Types" executed="True" result="Failure" success="False" time="0.108" asserts="0">
+                <results>
+                  <test-suite type="TestFixture" name="BooleanTypeTest" executed="True" result="Success" success="True" time="0.002" asserts="0">
+                    <categories>
+                      <category name="Booleans" />
+                      <category name="Data Types" />
+                    </categories>
+                    <results>
+                      <test-case name="Deveel.Data.Types.BooleanTypeTest.Compare_Booleans" executed="True" result="Success" success="True" time="0.001" asserts="5">
+                        <categories>
+                          <category name="Comparison" />
+                        </categories>
+                      </test-case>
+                      <test-case name="Deveel.Data.Types.BooleanTypeTest.Compare_BooleanToNumeric" executed="True" result="Success" success="True" time="0.000" asserts="3">
+                        <categories>
+                          <category name="Numbers" />
+                          <category name="Comparison" />
+                        </categories>
+                      </test-case>
+                      <test-case name="Deveel.Data.Types.BooleanTypeTest.Compare_BooleanToNumeric_Invalid" executed="True" result="Success" success="True" time="0.000" asserts="3">
+                        <categories>
+                          <category name="Numbers" />
+                          <category name="Comparison" />
+                        </categories>
+                      </test-case>
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="DataTypeParseTests" executed="True" result="Failure" success="False" time="0.080" asserts="0">
+                    <results>
+                      <test-case name="Deveel.Data.Types.DataTypeParseTests.SimpleNumeric" executed="True" result="Error" success="False" time="0.079" asserts="0">
+                        <failure>
+                          <message><![CDATA[SetUp : Deveel.Data.DatabaseSystemException : An error occurred while creating the database.
+  ----> Deveel.Data.Sql.Parser.SqlParseException : Exception of type 'Deveel.Data.Sql.Parser.SqlParseException' was thrown.]]></message>
+                          <stack-trace><![CDATA[at Deveel.Data.Database.Create (System.String adminName, System.String adminPassword) <0x416ed2c0 + 0x002d3> in <filename unknown>:0
+--SqlParseException
+at Deveel.Data.Sql.Statements.SqlStatement.Parse (IContext context, Deveel.Data.Sql.SqlQuery query) <0x417436e0 + 0x00123> in <filename unknown>:0
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="StringTypeTests" executed="True" result="Failure" success="False" time="0.021" asserts="0">
+                    <categories>
+                      <category name="Data Types" />
+                    </categories>
+                    <results>
+                      <test-case name="Deveel.Data.Types.StringTypeTests.BasicVarChar_Compare" executed="True" result="Success" success="True" time="0.000" asserts="3" />
+                      <test-case name="Deveel.Data.Types.StringTypeTests.BasicVarChar_Create" executed="True" result="Success" success="True" time="0.000" asserts="5" />
+                      <test-case name="Deveel.Data.Types.StringTypeTests.BasicVarChar_Parse" executed="True" result="Failure" success="False" time="0.002" asserts="1">
+                        <failure>
+                          <message><![CDATA[  Expected: No Exception to be thrown
+  But was:   (Unable to parse the given string to a valid data type.)
+  at Deveel.Data.Types.SqlType.Parse (IContext context, System.String s) <0x40b75700 + 0x001e7> in <filename unknown>:0 
+  at Deveel.Data.Types.SqlType.Parse (System.String s) <0x40b756d0 + 0x00013> in <filename unknown>:0 
+  at Deveel.Data.Types.StringTypeTests+<BasicVarChar_Parse>c__AnonStorey0.<>m__0 () [0x00000] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Types/StringTypeTests.cs:50 
+  at NUnit.Framework.Constraints.VoidInvocationDescriptor.Invoke () <0x4168b3f0 + 0x00019> in <filename unknown>:0 
+  at NUnit.Framework.Constraints.ExceptionInterceptor.Intercept (System.Object invocation) <0x4168ac70 + 0x00148> in <filename unknown>:0 
+]]></message>
+                          <stack-trace><![CDATA[at Deveel.Data.Types.StringTypeTests.BasicVarChar_Parse () [0x0000e] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Types/StringTypeTests.cs:50
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                      <test-case name="Deveel.Data.Types.StringTypeTests.LocalizedVarChar_Parse" executed="True" result="Failure" success="False" time="0.001" asserts="1">
+                        <failure>
+                          <message><![CDATA[  Expected: No Exception to be thrown
+  But was:   (Unable to parse the given string to a valid data type.)
+  at Deveel.Data.Types.SqlType.Parse (IContext context, System.String s) <0x40b75700 + 0x001e7> in <filename unknown>:0 
+  at Deveel.Data.Types.SqlType.Parse (System.String s) <0x40b756d0 + 0x00013> in <filename unknown>:0 
+  at Deveel.Data.Types.StringTypeTests+<LocalizedVarChar_Parse>c__AnonStorey2.<>m__0 () [0x00000] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Types/StringTypeTests.cs:95 
+  at NUnit.Framework.Constraints.VoidInvocationDescriptor.Invoke () <0x4168b3f0 + 0x00019> in <filename unknown>:0 
+  at NUnit.Framework.Constraints.ExceptionInterceptor.Intercept (System.Object invocation) <0x4168ac70 + 0x00148> in <filename unknown>:0 
+]]></message>
+                          <stack-trace><![CDATA[at Deveel.Data.Types.StringTypeTests.LocalizedVarChar_Parse () [0x0000e] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Types/StringTypeTests.cs:95
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                      <test-case name="Deveel.Data.Types.StringTypeTests.LocalizedWithEncodingVarChar_Parse" executed="True" result="Failure" success="False" time="0.001" asserts="1">
+                        <categories>
+                          <category name="Strings" />
+                          <category name="SQL Parse" />
+                        </categories>
+                        <failure>
+                          <message><![CDATA[  Expected: No Exception to be thrown
+  But was:   (Unable to parse the given string to a valid data type.)
+  at Deveel.Data.Types.SqlType.Parse (IContext context, System.String s) <0x40b75700 + 0x001e7> in <filename unknown>:0 
+  at Deveel.Data.Types.SqlType.Parse (System.String s) <0x40b756d0 + 0x00013> in <filename unknown>:0 
+  at Deveel.Data.Types.StringTypeTests+<LocalizedWithEncodingVarChar_Parse>c__AnonStorey3.<>m__0 () [0x00000] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Types/StringTypeTests.cs:112 
+  at NUnit.Framework.Constraints.VoidInvocationDescriptor.Invoke () <0x4168b3f0 + 0x00019> in <filename unknown>:0 
+  at NUnit.Framework.Constraints.ExceptionInterceptor.Intercept (System.Object invocation) <0x4168ac70 + 0x00148> in <filename unknown>:0 
+]]></message>
+                          <stack-trace><![CDATA[at Deveel.Data.Types.StringTypeTests.LocalizedWithEncodingVarChar_Parse () [0x0000e] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Types/StringTypeTests.cs:112
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                      <test-case name="Deveel.Data.Types.StringTypeTests.SizedVarChar_Compare" executed="True" result="Success" success="True" time="0.000" asserts="3" />
+                      <test-case name="Deveel.Data.Types.StringTypeTests.SizedVarChar_Create" executed="True" result="Success" success="True" time="0.000" asserts="2" />
+                      <test-case name="Deveel.Data.Types.StringTypeTests.SizedVarChar_Parse" executed="True" result="Failure" success="False" time="0.001" asserts="1">
+                        <failure>
+                          <message><![CDATA[  Expected: No Exception to be thrown
+  But was:   (Unable to parse the given string to a valid data type.)
+  at Deveel.Data.Types.SqlType.Parse (IContext context, System.String s) <0x40b75700 + 0x001e7> in <filename unknown>:0 
+  at Deveel.Data.Types.SqlType.Parse (System.String s) <0x40b756d0 + 0x00013> in <filename unknown>:0 
+  at Deveel.Data.Types.StringTypeTests+<SizedVarChar_Parse>c__AnonStorey1.<>m__0 () [0x00000] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Types/StringTypeTests.cs:81 
+  at NUnit.Framework.Constraints.VoidInvocationDescriptor.Invoke () <0x4168b3f0 + 0x00019> in <filename unknown>:0 
+  at NUnit.Framework.Constraints.ExceptionInterceptor.Intercept (System.Object invocation) <0x4168ac70 + 0x00148> in <filename unknown>:0 
+]]></message>
+                          <stack-trace><![CDATA[at Deveel.Data.Types.StringTypeTests.SizedVarChar_Parse () [0x0000e] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Types/StringTypeTests.cs:81
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                      <test-case name="Deveel.Data.Types.StringTypeTests.SizedWithEncoding_Parse" executed="True" result="Failure" success="False" time="0.001" asserts="1">
+                        <categories>
+                          <category name="Strings" />
+                          <category name="SQL Parse" />
+                        </categories>
+                        <failure>
+                          <message><![CDATA[  Expected: No Exception to be thrown
+  But was:   (Unable to parse the given string to a valid data type.)
+  at Deveel.Data.Types.SqlType.Parse (IContext context, System.String s) <0x40b75700 + 0x001e7> in <filename unknown>:0 
+  at Deveel.Data.Types.SqlType.Parse (System.String s) <0x40b756d0 + 0x00013> in <filename unknown>:0 
+  at Deveel.Data.Types.StringTypeTests+<SizedWithEncoding_Parse>c__AnonStorey4.<>m__0 () [0x00000] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Types/StringTypeTests.cs:128 
+  at NUnit.Framework.Constraints.VoidInvocationDescriptor.Invoke () <0x4168b3f0 + 0x00019> in <filename unknown>:0 
+  at NUnit.Framework.Constraints.ExceptionInterceptor.Intercept (System.Object invocation) <0x4168ac70 + 0x00148> in <filename unknown>:0 
+]]></message>
+                          <stack-trace><![CDATA[at Deveel.Data.Types.StringTypeTests.SizedWithEncoding_Parse () [0x0000e] in /var/calculate/remote/distfiles/egit-src/deveeldb.git/src/deveeldb-nunit/Deveel.Data.Types/StringTypeTests.cs:128
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>
