@@ -1,0 +1,54 @@
+# Comments in YAML starts with # character ( https://github.com/travis-ci/travis-ci/issues/753 )
+
+# steps what are executed:
+#
+# before_install
+# install
+# before_script
+# script
+# after_success or after_failure
+# OPTIONAL before_deploy
+# OPTIONAL deploy
+# OPTIONAL after_deploy
+# after_script
+
+# You can specify your own script to run ( https://docs.travis-ci.com/user/customizing-the-build/ )
+
+os:
+- linux
+sudo: false
+language: c
+
+# Before the build, we check if a cached archive exists. If it does, we pull it down and unpack it to the specified locations.
+
+before_install:
+ - ./travis-ci.org/before_install.sh
+
+install:
+ - ./travis-ci.org/install.sh
+
+before_script:
+ - ./travis-ci.org/before_script.sh
+
+script:
+ - ./travis-ci.org/script.sh
+
+# After the build we check for changes in the directory, create a new archive and upload the updated archive back to S3.
+
+before_cache:
+ - ./travis-ci.org/before_cache.sh
+
+cache:
+  directories:
+    - /usr/portage/distfiles
+    - /usr/portage
+    - /etc/portage
+
+after_success:
+ - ./travis-ci.org/after_success.sh
+
+after_failure:
+ - ./travis-ci.org/after_failure.sh
+
+after_script:
+ - ./travis-ci.org/after_script.sh
